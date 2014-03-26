@@ -97,11 +97,12 @@
 			display: block;
 			content: ''; 
 		}
-		p{ 	
+		p,#disqus_thread{ 	
 			letter-spacing: 1px;
 			@include margin-bottom(24px);
 			@include padding-two-values(0px,48px);
 		}
+		#disqus_thread{@include margin-top:72px;}
 	}
 
 	@include media($mobile) {
@@ -111,7 +112,7 @@
 		    .article-title h1{
 		    	@include magic-font(18px,1);
 		    }
-		    p{ 	
+		    p,#disqus_thread{ 	
 				letter-spacing: 0px;
 				@include padding-two-values(0px,0px);
 			}
