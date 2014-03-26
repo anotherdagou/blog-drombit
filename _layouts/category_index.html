@@ -1,0 +1,17 @@
+---
+layout: default
+categories: [all]
+---
+			{% for post in site.categories[page.category] %}
+			<div class="article-wrap">
+				<article class="article">
+					<a href="{{ post.url }}" class="article-title"><h1>{{ post.title }}</h1></a>
+					<span class="article-date-author">
+						<span class="article-author">
+							Por{% for member in site.data.members %}{% if member.name contains post.author %}<a href="http://www.twitter.com/{{member.twitter}}">{{member.name}}</a>{% endif%}{% endfor %}
+						</span>
+						<span> -- <time class="article-date" pubdate datetime="{{ post.date | date_to_string }}">{{ post.date | date_to_string }}</time></span>
+					</span>
+				</article>
+			</div>
+			{% endfor %}

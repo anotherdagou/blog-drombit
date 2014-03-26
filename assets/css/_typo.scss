@@ -1,0 +1,67 @@
+/*------------------------------------*\
+	$TIPOGRAFIA
+\*------------------------------------*/
+/* Common margin-bottom for vertical rhythm. */
+h1,h2,h3,h4,h5,h6,
+ul,ol,dl,
+fieldset,
+p,
+table,
+pre,
+hr,
+section,
+article,
+header,
+footer,
+img
+{
+	margin: 0;
+    @include margin-bottom(24px)
+}
+
+/* These handle massive type, for less frequently occuring bits of text (e.g. in mastheads and banners). */
+.giga{
+    font-size:80px;
+    font-size:5rem;     /* 80px */
+    line-height:1.2;    /* 96px */
+}
+.mega{
+    font-size:64px;
+    font-size:4rem;     /* 64px */
+    line-height:1.125;  /* 72px */
+}
+.kilo{
+    font-size:48px;
+    font-size:3rem;     /* 48px */
+    line-height:1;      /* 48px */
+}
+
+/* Define headings and their associated classes here. */
+h1,.alpha{
+    @include magic-font(32px,2);
+    @include margin-bottom(24px)
+}
+h2,.beta{
+    @include magic-font(24px,1);
+}
+h3,.gamma{
+    @include magic-font(20px,1);
+}
+h4,.delta{
+    @include magic-font(18px,1);
+}
+h5,.epsilon{
+    @include magic-font(16px,1);
+}
+h6,.zeta{
+    @include magic-font(16px,1);
+}
+
+.zeta-milli{
+    @include magic-font(15px,1);
+}
+
+/* Smaller-than-body-copy sizes here. */
+small,.milli {
+    @include magic-font(12px,1);
+}

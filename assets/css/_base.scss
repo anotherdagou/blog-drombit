@@ -1,0 +1,33 @@
+body{
+	@include magic-font(16px,1);
+	font-family: $font-family;
+	background: $bg-white;
+	color: $color-txt;
+}
+
+a{ 
+	color: $bg-aqua;
+	text-decoration: none;
+}
+
+img{
+	vertical-align: middle;
+	max-width: 100%;
+}
+
+/* 
+ * Formato para el código
+ * Utilizado en Pygments
+ */
+
+ .highlight{
+ 	@include padding-all(12px);
+ 	@include margin-bottom(24px);
+ 	@include margin-left(48px);
+ 	@include margin-right(48px);
+
+ 	@include media($mobile) { 
+		@include margin-left(0px);
+ 		@include margin-right(0px);			
+	}	
+ }

@@ -1,0 +1,8 @@
+url: blog.drombit.com
+baseurl: /
+name: Drombit Blog
+markdown: redcarpet
+highlighter: pygments
+exclude: ['Rakefile','config.codekit']
+paginate: 6
+paginate_path: "page:num"
