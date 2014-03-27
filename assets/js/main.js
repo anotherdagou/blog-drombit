@@ -27,21 +27,5 @@
     }else if (category == "OPINION"){
         $("#categoryName").html("OPINIÓN");
     };
-
-    // Carga de los botones para compartir
-    var share = new Share(".social-share", {
-      ui: {
-        flyout: "top center",
-        button_text: "Compartir Articulo",
-      },
-      networks: {
-        twitter: {
-          enabled: true
-        },
-        facebook: {
-            app_id: "787359484627569"
-        }
-      }
-    });
  
 }(jQuery || {}));
