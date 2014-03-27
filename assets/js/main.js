@@ -15,8 +15,33 @@
     $('#category').on("click", function(){
     	menuActive.play();
     });
+
     $('body').on("click", "#close-menu", function(){
     	menuActive.reverse();
+    });
+
+    // Fix para los titulos de las secciones en el header
+    var category = $("#categoryName").html();
+    if (category == "DISENO") {
+        $("#categoryName").html("DISEÑO");
+    }else if (category == "OPINION"){
+        $("#categoryName").html("OPINIÓN");
+    };
+
+    // Carga de los botones para compartir
+    var share = new Share(".social-share", {
+      ui: {
+        flyout: "top center",
+        button_text: "Compartir Articulo",
+      },
+      networks: {
+        twitter: {
+          enabled: true
+        },
+        facebook: {
+            app_id: "228760740653476"
+        }
+      }
     });
  
 }(jQuery || {}));
