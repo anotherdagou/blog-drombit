@@ -216,20 +216,22 @@
 
 }
 
-.social-share.sharer-0{
+.social-buttons{
+	list-style: none;
 	text-align: center;
 	border-top: 2px solid;
 	border-bottom: 2px solid;
 	border-color: rgba(0,39,59,.08);
-	width: 100% !important;
-	@include padding-two-values(48px,0px);
-	@include padding-bottom(76px);
-	@include clearfix;
-	label{
-		border: 2px solid;
-		border-color: rgba(0,39,59,.08);
-		background: $bg-white !important;
-		padding: 0.75rem 1.5rem !important;
+	li{
+		display: inline-block;
+		@include margin-two-values(48px,6px);
 	}
-	.social.active.center{ margin-left: 0px !important;}
+	.fb-share-button{
+		position: relative;
+		top: -8px;
+	}
+	@include media($mobile){
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+	}
 }
