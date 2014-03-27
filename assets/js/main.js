@@ -39,7 +39,7 @@
           enabled: true
         },
         facebook: {
-            app_id: "228760740653476"
+            app_id: "787359484627569"
         }
       }
     });
