@@ -16,7 +16,7 @@ Drømbit surgió ante la necesidad que teníamos para poder financiar nuestros p
 
 Llevaba mucho tiempo queriendo probar un generador de sitios estáticos, pero, para ser sinceros, la curva de aprendizaje de las opciones que hay en el mercado me imponía. Pero algún día tenia que intentarlo. Si nunca haz escuchado hablar de los generadores de sitios estáticos, lo que debes de saber es que se trata de un sistema que te permite generar un sitio o blog en HTML Puro. Esto quiere decir que no existen bases datos, ni administración de usuarios, ni actualizaciones de sistema, etc, etc.
 
-La opción que decidí probar se llama [Jekyll](http://jekyllrb.com). La razón es que es sencillo para comenzar a jugar con este tipo de sistemas, es utilizado por [Github Pages](http://pages.github.com/‎) lo cual significa que hay una muy buena comunidad detrás que te ayuda a solucionar los diferentes problemas que surgen a la hora de utilizar Jekyll.
+La opción que decidí probar se llama [Jekyll](http://jekyllrb.com). La razón es que es sencillo para comenzar a jugar con este tipo de sistemas, es utilizado por [Github Pages](http://pages.github.com‎) lo cual significa que hay una muy buena comunidad detrás que te ayuda a solucionar los diferentes problemas que surgen a la hora de utilizar Jekyll.
 
 En palabras simples, Jekyll te da una estructura base de un sitio o un blog. A partir de ahí construyes lo que deseas, finalmente el se encarga de generarte una carpeta con todo el sitio en HTML, el cual puedes subir a tu a tu servidor.
 
