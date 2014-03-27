@@ -17,7 +17,8 @@ comments: true
 		<span> / <time class="article-date" pubdate datetime="{{ page.date | date_to_string }}">{{ page.date | date_to_string }}</time></span>
 	</span>
 	{{ content }}
-	
+	<!-- Area para los botones de compartir -->
+	<div class="social-share"></div>
 	{% if page.comments %} 
 		<p><div id="disqus_thread"></div></p>
 	    <script type="text/javascript">
