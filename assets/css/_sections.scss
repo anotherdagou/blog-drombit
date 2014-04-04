@@ -22,6 +22,7 @@
 		border-radius: 4px;
 		background: lighten($bg-blue,10%);
 		cursor: pointer;
+		@include btn-hover;
 		&:after{
 			content:'';
 			display: inline-block;
@@ -175,8 +176,10 @@
 		line-height: 28px;
 		border-radius: 100%;
 		@include padding-all(3px);
+		@include btn-hover;
 		&:hover{
 			background: $bg-aqua;
+			color: $bg-white;
 		}
 	}
 	ul{
@@ -192,6 +195,8 @@
 
 		a{
 			color: lighten($bg-blue,20%);
+			@include btn-hover;
+			&:hover{ color: $bg-aqua;}
 		}
 	}
 

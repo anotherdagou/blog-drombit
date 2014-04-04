@@ -499,6 +499,9 @@ table {
 /* 
  * Magins
 */
+/* 
+ * Mixin para animación en botones 
+*/
 /*------------------------------------*\
 	$Grid Settings
 \*------------------------------------*/
@@ -650,7 +653,12 @@ small, .milli {
   padding: 0.75rem 1.5rem;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
-  border-radius: 4px; }
+  border-radius: 4px;
+  -webkit-transition: .5s all;
+  -moz-transition: .5s all;
+  -ms-transition: .5s all;
+  -o-transition: .5s all;
+  transition: .5s all; }
   .btn:hover {
     background: #44bcc3; }
 
@@ -691,7 +699,12 @@ small, .milli {
     -moz-border-radius: 4px;
     border-radius: 4px;
     background: #2d2f36;
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-transition: .5s all;
+    -moz-transition: .5s all;
+    -ms-transition: .5s all;
+    -o-transition: .5s all;
+    transition: .5s all; }
     .header #category:after {
       content: '';
       display: inline-block;
@@ -879,9 +892,15 @@ small, .milli {
     line-height: 28px;
     border-radius: 100%;
     padding: 3px;
-    padding: 0.1875rem; }
+    padding: 0.1875rem;
+    -webkit-transition: .5s all;
+    -moz-transition: .5s all;
+    -ms-transition: .5s all;
+    -o-transition: .5s all;
+    transition: .5s all; }
     .menu #close-menu:hover {
-      background: #57c3c9; }
+      background: #57c3c9;
+      color: white; }
   .menu ul {
     padding: 0;
     vertical-align: middle;
@@ -893,7 +912,14 @@ small, .milli {
       padding: 24px 0px;
       padding: 1.5rem 0rem; }
     .menu ul a {
-      color: #454851; }
+      color: #454851;
+      -webkit-transition: .5s all;
+      -moz-transition: .5s all;
+      -ms-transition: .5s all;
+      -o-transition: .5s all;
+      transition: .5s all; }
+      .menu ul a:hover {
+        color: #57c3c9; }
   @media screen and (max-width: 480px) {
     .menu {
       float: left;

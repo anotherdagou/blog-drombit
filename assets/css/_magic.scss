@@ -81,3 +81,16 @@
 	margin-left: $margin;
 	margin-left: $margin/$font-base + rem;
 }
+
+
+/* 
+ * Mixin para animación en botones 
+*/
+
+@mixin btn-hover(){
+	-webkit-transition: .5s all;
+	-moz-transition: .5s all;
+	-ms-transition: .5s all;
+	-o-transition: .5s all;
+	transition: .5s all;
+}
