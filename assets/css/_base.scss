@@ -16,6 +16,10 @@ img{
 	max-width: 100%;
 }
 
+ul,ol{
+	list-style-position:inside;
+}
+
 /* 
  * Formato para el código
  * Utilizado en Pygments
@@ -23,7 +27,7 @@ img{
 
  .highlight{
  	@include padding-all(12px);
- 	@include margin-bottom(24px);
+ 	@include margin-bottom(48px);
  	@include margin-left(48px);
  	@include margin-right(48px);
 

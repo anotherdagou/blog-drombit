@@ -533,6 +533,9 @@ img {
   vertical-align: middle;
   max-width: 100%; }
 
+ul, ol {
+  list-style-position: inside; }
+
 /* 
  * Formato para el código
  * Utilizado en Pygments
@@ -540,8 +543,8 @@ img {
 .highlight {
   padding: 12px;
   padding: 0.75rem;
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 48px;
+  margin-bottom: 3rem;
   margin-left: 48px;
   margin-left: 3rem;
   margin-right: 48px;
@@ -565,7 +568,6 @@ ul, ol, dl,
 fieldset,
 p,
 table,
-pre,
 hr,
 section,
 article,
@@ -573,8 +575,11 @@ header,
 footer,
 img {
   margin: 0;
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 48px;
+  margin-bottom: 3rem; }
+
+p > img {
+  margin-bottom: 0px; }
 
 /* These handle massive type, for less frequently occuring bits of text (e.g. in mastheads and banners). */
 .giga {
@@ -603,8 +608,8 @@ h1, .alpha {
   font-size: 32px;
   font-size: 2rem;
   line-height: 1.5;
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 48px;
+  margin-bottom: 3rem; }
 
 h2, .beta {
   font-size: 24px;
@@ -803,8 +808,6 @@ small, .milli {
       content: ''; }
     .blog .article p, .blog .article h1, .blog .article h2, .blog .article ul, .blog .article ol, .blog .article #disqus_thread {
       letter-spacing: 1px;
-      margin-bottom: 36px;
-      margin-bottom: 2.25rem;
       padding: 0px 48px;
       padding: 0rem 3rem; }
     .blog .article #disqus_thread {
@@ -835,17 +838,17 @@ small, .milli {
       .blog:last-child {
         margin-right: 0; }
       .blog .article .article-title h1 {
-        font-size: 18px;
-        font-size: 1.125rem;
-        line-height: 1.33333; }
+        font-size: 20px;
+        font-size: 1.25rem;
+        line-height: 1.2; }
       .blog .article p, .blog .article #disqus_thread {
         letter-spacing: 0px;
         padding: 0px 0px;
         padding: 0rem 0rem; }
       .blog .article h1 {
-        font-size: 18px;
-        font-size: 1.125rem;
-        line-height: 1.33333;
+        font-size: 20px;
+        font-size: 1.25rem;
+        line-height: 1.2;
         padding: 0px 0px;
         padding: 0rem 0rem; } }
 
