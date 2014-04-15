@@ -841,7 +841,10 @@ small, .milli {
       .blog .article .article-title h1 {
         font-size: 20px;
         font-size: 1.25rem;
-        line-height: 1.2; }
+        line-height: 1.2;
+        font-size: 18px;
+        font-size: 1.125rem;
+        line-height: 1.33333; }
       .blog .article p, .blog .article #disqus_thread {
         letter-spacing: 0px;
         padding: 0px 0px;

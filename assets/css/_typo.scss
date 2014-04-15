@@ -15,7 +15,7 @@ footer,
 img
 {
 	margin: 0;
-    @include margin-bottom(48px)
+    @include margin-bottom(48px);
 }
 
 p>img{margin-bottom: 0px;}
@@ -40,7 +40,8 @@ p>img{margin-bottom: 0px;}
 /* Define headings and their associated classes here. */
 h1,.alpha{
     @include magic-font(32px,2);
-    @include margin-bottom(48px)
+    @include margin-bottom(48px);
+
 }
 h2,.beta{
     @include magic-font(24px,1);

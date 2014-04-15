@@ -124,6 +124,7 @@
 	    .article{
 		    .article-title h1{
 		    	@include magic-font(20px,1);
+		    	@include magic-font(18px,1);
 		    }
 		    p,#disqus_thread{ 	
 				letter-spacing: 0px;
