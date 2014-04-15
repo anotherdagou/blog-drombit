@@ -1,6 +1,6 @@
 ;(function ($) {
 	// Fix de imagenes dentro de una etiqueta p
-	$("img").parent("p").css({ padding: "0px", marginBottom: "0px", marginLeft: "-24px", marginRight: "-24px", textAlign:"center"; });
+	$("img").parent("p").css({ padding: "0px", marginBottom: "0px", marginLeft: "-24px", marginRight: "-24px", textAlign:"center"});
 
 	//create a TimelineLite instance
     var menuActive = new TimelineLite({paused:true});

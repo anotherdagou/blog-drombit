@@ -93,7 +93,7 @@
 		}
 		.article-date, .article-author{
 			border-radius: 4px;
-			a{color:$color-txt;}
+			a{color:$color-txt; text-decoration:underline;}
 		}
 
 		&:after{

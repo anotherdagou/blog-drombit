@@ -802,7 +802,8 @@ small, .milli {
     .blog .article .article-date, .blog .article .article-author {
       border-radius: 4px; }
       .blog .article .article-date a, .blog .article .article-author a {
-        color: #606060; }
+        color: #606060;
+        text-decoration: underline; }
     .blog .article:after {
       display: block;
       content: ''; }
