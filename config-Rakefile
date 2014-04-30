@@ -36,6 +36,13 @@ task :build do
   sh "jekyll serve -w"
 end
 
+# Usage rake build_drafts for build an watch changes in Local with drafts
+desc "Build site using Jekyll"
+task :build do
+  sh "jekyll serve -w --drafts"
+end
+
+
 # Usage rake commit_deploy['Your commit'] for automatic add,commit and push the modified files to Github 
 # Source: http://davidensinger.com/2013/07/automating-jekyll-deployment-to-github-pages-with-rake/
 desc "Commit _site/"
@@ -79,6 +86,36 @@ task :new_post, :title do |t, args|
     post.puts "---"
     post.puts "layout: post"
     post.puts "title: \"#{title.gsub(/&/,'&amp;')}\""
+    post.puts "author: "
+    post.puts "date: #{Time.now.strftime('%Y-%m-%d %H:%M:%S')}"
+    post.puts "comments: true"
+    post.puts "# Categories[diseno o desarrollo u opinion ]"
+    post.puts "categories: []"
+    post.puts "---"
+    post.puts "#{referenceText}"
+  end
+end
+
+# Usage rake new_draf_post['my new post']
+# Source http://octopress.com
+desc "Begin a new Draft post in _posts"
+task :new_draf_post, :title do |t, args|
+  if args.title
+    title = args.title
+  else
+    title = get_stdin("Enter a title for your post: ")
+  end
+  mkdir_p "_drafts"
+  filename = "_drafts/#{Time.now.strftime('%Y-%m-%d')}-#{title.to_url}.markdown"
+  if File.exist?(filename)
+    abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
+  end
+  puts "Creating new post: #{filename}"
+  open(filename, 'w') do |post|
+    post.puts "---"
+    post.puts "layout: post"
+    post.puts "title: \"#{title.gsub(/&/,'&amp;')}\""
+    post.puts "description: "
     post.puts "author: "
     post.puts "date: #{Time.now.strftime('%Y-%m-%d %H:%M:%S')}"
     post.puts "comments: true"
