@@ -24,4 +24,4 @@ Si tu idea es tener un Blog que sea administrable mediante una interfaz gr&aacut
 
 Hay muchas cosas de que platicar acerca de Jekyll pero eso ser&aacute; para otra ocasi&oacute;n. Por ahora solo quiero darles la bienvenida a nuestro nuevo blog.
 
-PD.- Pueden consultar el c&oacute;digo fuente de este blog [Github](https://github.com/anotherdagou/blog-drombit).
+PD.- Pueden consultar el c&oacute;digo fuente de este blog en [Github](https://github.com/anotherdagou/blog-drombit).
