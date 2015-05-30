@@ -1,6 +1,6 @@
 url: blog.drombit.com
 baseurl: /
-destination: ../../site
+destination: ../../
 name: Drombit Blog
 markdown: redcarpet
 redcarpet:
