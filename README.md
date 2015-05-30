@@ -1,4 +1,4 @@
 Blog Drombit
 ============
 
-Blog para Drombit construido con Jekyll
+Blog de Drombit construido con Jekyll
