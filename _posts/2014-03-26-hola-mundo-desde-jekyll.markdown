@@ -20,7 +20,7 @@ La opci&oacute;n que decid&iacute; probar se llama [Jekyll](http://jekyllrb.com)
 
 En palabras simples, Jekyll te da una estructura base de un sitio o un blog. A partir de ah&iacute; construyes lo que deseas, finalmente el se encarga de generarte una carpeta con todo el sitio en HTML, el cual puedes subir a tu a tu servidor.
 
-Si tu idea es tener un Blog que sea administrable mediante una interfaz gr&aacute;fica, definitivamente Jekyll no es tu opci&oacute;n, si por el contrario deseas probar una nueva forma de generar un blog o un sitio web. Jekyll te resultara interesante.
+Si tu idea es tener un Blog que sea administrable mediante una interfaz gr&aacute;fica, definitivamente Jekyll no es tu opci&oacute;n, si por el contrario deseas probar una nueva forma de generar un blog o un sitio web, Jekyll te resultara interesante.
 
 Hay muchas cosas de que platicar acerca de Jekyll pero eso ser&aacute; para otra ocasi&oacute;n. Por ahora solo quiero darles la bienvenida a nuestro nuevo blog.
 
