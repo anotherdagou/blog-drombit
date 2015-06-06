@@ -4,8 +4,10 @@
 	color: #fff;
 }
 	.site-contact-us__action {
-		@include padding-top(12px);
-		@include padding-bottom(12px);
+		@include padding-top(24px);
+		@include padding-bottom(24px);
+
+		> h3 { @include margin-bottom(24px); }
 
 		> .btn--ghost {
 			border-color: $brandColorGray;

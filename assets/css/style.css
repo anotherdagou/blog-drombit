@@ -1385,10 +1385,13 @@ Para ver una referencia más detallada sobre como llamar a los iconos visitar la
   color: #fff; }
 
 .site-contact-us__action {
-  padding-top: 12px;
-  padding-top: 0.75rem;
-  padding-bottom: 12px;
-  padding-bottom: 0.75rem; }
+  padding-top: 24px;
+  padding-top: 1.5rem;
+  padding-bottom: 24px;
+  padding-bottom: 1.5rem; }
+  .site-contact-us__action > h3 {
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem; }
   .site-contact-us__action > .btn--ghost {
     border-color: #FAFAFB;
     color: #FAFAFB; }
