@@ -92,9 +92,13 @@
 
 			> button {
 				@include margin-top(6px);
+				border-radius: 4px;
 			}
 
-			@include media(min-width 381px) { float: right;}
+			@include media(min-width 381px) { 
+				float: right;
+				@include margin-top(12px);
+			}
 
 			@include media($tablet) { display: none }
 		}
