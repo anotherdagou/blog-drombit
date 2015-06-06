@@ -6,12 +6,15 @@ author: Alberto
 date: 2014-04-15 09:33:56
 comments: true
 # Categories[diseno o desarrollo u opinion ]
-categories: [desarrollo]
+categories: 
+  - desarrollo
+tags:
+  - PHP
 ---
 
-# Estructura básica de HTML
+Para este pequeño tutorial crearemos un pequeño menú de navegación con una clase activa. Los pasos a seguir es contar con una estructura básica del menú en un archivo _menu.blade.php_.
 
-Para este pequeño tutorial crearemos un pequeño menu de navegación con una clase activa. Los pasos a seguir es contar con una estructura básica del menú en un archivo _menu.blade.php_.
+# Estructura básica de HTML
 
 {% highlight HTML linenos%}
 <nav>
@@ -71,4 +74,4 @@ nav li.active a {
 {% endraw %}
 {% endhighlight %}
 
-Lo más común es crear este tipo de estructuras en un layout donde pueda ser utilizado desde cualquier vista. Puedes acceder al código del script desde [aqui](https://gist.github.com/apat/10558555)
+Lo más común es crear este tipo de estructuras en un layout donde pueda ser utilizado desde cualquier vista. Puedes acceder al código del script desde [aquí](https://gist.github.com/apat/10558555)

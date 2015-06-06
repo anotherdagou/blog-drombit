@@ -1,0 +1,34 @@
+body{
+	@include magic-font(14px,1);
+	font-family: $family-font;
+	color: $brandColorText;
+	background: #fff;
+
+	@include media($desktop){
+		@include magic-font(16px,1.2);
+		@include padding-all(0px);
+	}
+}
+
+a{ 
+	color: $brandColorLink;
+	text-decoration:none;
+}
+
+
+ul{
+	list-style: initial;
+
+	ul{
+		list-style: circle;
+		margin-bottom: 0px;
+	}
+}
+
+img{
+	vertical-align: middle;
+	max-width: 100%;
+}
+
+mark { background: darken(#FCF8E3,10); }
+

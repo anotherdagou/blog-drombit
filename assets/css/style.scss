@@ -4,16 +4,15 @@
 /**
   *  DESCRIPCION............ Descripción del proyecto
   *  GFONTS................. Fuentes de Google
+  *  BURBOUN NEAT .......... Framework en SASS para el diseño responsivo 
   *  NORMALIZE.............. Normaliza los estilos
-  *  VARIABLES & MIXINS..... Variables & Mixins (magic)
-  *  GRID-SETTINGS.......... Framework en SASS para el diseño responsivo Y Mixins Propios
+  *  VARIABLES & MIXINS..... Variables Y Mixins Propios (Magic)
   *  BASE................... Estilos Base para el sitio web
-  *	 TIPOGRAFIA............. Estilos para las fuentes tipograficas por Harry de CssWizardry
-  *  CLASES................. Clases principales del sitio web
-  *  SECCIONES.............. Secciones y modulos de la pagina
-  *  MEDIA-QUERIES.......... Media queries para diferentes resoluciones
+  *	 TIPOGRAFIA............. Estilos para las fuentes tipográficas por Harry de CssWizardry
+  *  CLASES................. Clases comunes que se utilizan en todos los proyectos.
+  *  COMPONENTES............ Elementos que forman el sitio web (botones,tablas,listas,etc), un conjunto de componentes nos ayudan a crear Modulos.
+  *  MODULOS................ Módulos del sitio
  */
-
 
 
 
@@ -21,72 +20,91 @@
 	$DESCRIPCION
 \*------------------------------------*/
 /**
- *  Blog Drombit
- *  Fecha = 05/03/2014
- *  Desarrollado con Jekill + Burbon 
+ *  Sitio Web de Drombit
+ *  Fecha: 28/04/2015
+ *  Nueva versión del sitio web de Drømbit
+ *  www.drombit.com
+ *  Autor: Diego Armando Catalan Tandi - Alberto Pat Martinez
 */
-
 
 
 
 /*------------------------------------*\
 	$GFONTS
 \*------------------------------------*/
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,800,300,200);
 
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,500,600,700);
+
+
+
+/*------------------------------------*\
+	$BOURBON NEAT
+\*------------------------------------*/
+
+@import "bourbon/bourbon";
+@import "base/_grid-settings";
+@import "neat/neat";
+@import "base/_breakpoints";
 
 
 
 /*------------------------------------*\
 	$NORMALIZE
 \*------------------------------------*/
-@import "_normalize";
 
-
-
-
-/*------------------------------------*\
-	$VARIABLES & MIXUPS
-\*------------------------------------*/
-@import "_vars";
-@import "_magic";
-
+@import "base/_normalize";
 
 
 
 /*------------------------------------*\
-	$Grid Settings
+	MIXINS
 \*------------------------------------*/
-@import "_grid-settings";
 
+@import "mixins/_magic";
 
 
 
 /*------------------------------------*\
-	$BASE
+	$ESTILOS BASE
 \*------------------------------------*/
-@import "_base";
 
+@import "base/_variables";
+@import "base/_initial";
 
 
 
 /*------------------------------------*\
 	$TIPOGRAFIA
 \*------------------------------------*/
-@import "_typo";
 
+@import "base/_typo";
 
 
 
 /*------------------------------------*\
 	$CLASES
 \*------------------------------------*/
-@import "_clases";
 
+@import "base/_clases";
 
 
 
 /*------------------------------------*\
-	$SECCIONES
+	$COMPONENTES
 \*------------------------------------*/
-@import "_sections";
+
+@import "components/_buttons";
+@import "components/_fontastic";
+
+
+
+/*------------------------------------*\
+	$MODULOS
+\*------------------------------------*/
+
+@import "modules/_site-nav.scss";
+@import "modules/_site-blog-article";
+@import "modules/_site-contact-us.scss";
+
+
+

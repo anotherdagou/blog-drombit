@@ -1,0 +1,73 @@
+// Estilos globales los post en el sitio.
+.site-blog__category-title {
+	@include padding-bottom(24px);
+	border-bottom: 1px solid darken($brandColorGray,10);
+}
+
+.site-blog__article {
+	@include margin-bottom(24px);
+}
+	.article__title{
+		> h1 {
+			margin-bottom: 0;
+			color: $brandColor;
+			&:hover { color: $brandColorComplement; }
+		}
+	}
+
+	.article__date-author {
+		display: inline-block;
+		@include margin-bottom(24px);
+		text-transform: uppercase;
+		font-family: helvetica;
+		font-size: 14px;
+	}
+	
+	.article__excerpt > p { @include margin-bottom(12px); }
+
+	.article__readmore {
+		display: inline-block;
+		@include margin-bottom(24px);
+		text-transform: uppercase;
+	}
+
+	.article__related {
+		> ul {
+			list-style: none;
+		}
+		
+		p { @include margin-top(12px); }
+		p:empty { display: none; }
+	}
+
+	.article__social-buttons {
+		border-top: 1px solid darken($brandColorGray,10);
+		border-bottom: 1px solid darken($brandColorGray,10);
+		@include padding-top(24px);
+		@include padding-bottom(24px);
+
+		list-style: none;
+		text-align: center;
+
+		li { 
+			display: inline-block;
+			@include padding-left(6px);
+			@include padding-right(6px)
+		}
+
+		.fb-share-button {
+			position: relative; 
+			top: -8px;
+		}
+	}
+
+// Paginación 
+.site-pagination {
+	@include padding-top(24px);
+	@include padding-bottom(24px);
+	@include margin-bottom(24px);
+	border-top: 1px solid darken($brandColorGray,10);
+	font-family: helvetica;
+
+	> .next { color: darken($brandColorGray, 35); }
+}

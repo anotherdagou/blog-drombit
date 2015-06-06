@@ -6,7 +6,10 @@ author: Diego
 date: 2014-04-14 17:05:20
 comments: true
 # Categories[diseno o desarrollo u opinion ]
-categories: [desarrollo]
+categories:
+  - desarrollo
+tags:
+  - Jekyll
 ---
 
 **Jekyll** es un generador de sitios estáticos construido en **Ruby**. Los generadores de sitios estáticos pueden ser utilizados para diferentes propósitos (portafolios, sitios de empresa, blogs, etc.). Una característica de este tipo de sistemas es la ausencia de bases de datos y sistemas complejos; Hablamos de sitios puros y duros en HTML. Como bien se podrán imaginar si queremos construir un blog con puro HTML, esto de entrada sonaría un poco descabellado, Pero, los generadores de sitios estáticos como Jekyll se encargan de hacer el trabajo pesado.
@@ -56,18 +59,18 @@ Si todo sale bien se generara nuestro sitio y lo podremos ver funcionando entran
 Si entramos al directorio de nuestro proyecto podremos ver la siguiente estructura de archivos.
 
 ~~~~
-	# Directorio mi-sitio-jekyll
+    # Directorio mi-sitio-jekyll
 
-	├── _config.yml
-	├── _layouts
-		└── default.html
-		└── post.html
-	├── _posts
-	│   ├── 2014-04-10-welcome-to-jekyll.markdown
-	├── _site
-	├── css
-	│   └── main.css
-	└── index.html
+    ├── _config.yml
+    ├── _layouts
+        └── default.html
+        └── post.html
+    ├── _posts
+    │   ├── 2014-04-10-welcome-to-jekyll.markdown
+    ├── _site
+    ├── css
+    │   └── main.css
+    └── index.html
 ~~~~
 
 Si observamos nuestro directorio encontramos una carpeta llamada **_site**, esta carpeta contiene nuestro sitio web estático, el cual podrá ser transferido a nuestro hosting y podremos ver nuestro sitio funcionando. 
@@ -85,8 +88,8 @@ title: Your New Jekyll Site
   <ul class="posts">
     {% for post in site.posts %}
       <li>
-      	<span>{{ post.date | date_to_string }}</span> &raquo; 
-      	<a href="{{ post.url }}">{{ post.title }}</a>
+        <span>{{ post.date | date_to_string }}</span> &raquo; 
+        <a href="{{ post.url }}">{{ post.title }}</a>
       </li>
     {% endfor %}
   </ul>

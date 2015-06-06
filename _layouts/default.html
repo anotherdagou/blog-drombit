@@ -29,42 +29,33 @@
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
-        <header class="header">
-        	<div class="header-inner">
-        		<a class="logo" href="{{ site.baseurl }}">DRØMBIT BLOG -</a>  
-        		{% comment%}Mostrando la categoria en la que nos encontramos en el Header{% endcomment %}
-        		{% assign name_category = page.categories | join: '' %}
-        		<span id="category">
-        			{% if page.categories | first | upcase | size > 0 %}
-        				{% if name_category contains 'all' %}
-							<span id="categoryName">{{ page.title | remove: 'Categoria:' | upcase }}</span>
-	        			{% else %}
-	        				<span id="categoryName">{{page.categories | first | upcase }}</span>
-	        			{% endif %}
-        			{% else %}
-        				<span id="categoryName">INICIO</span>
-        			{% endif %}
-        			<nav class="menu">
-        				<div id="close-menu">X</div>
-        				<ul>
-        					<li><a href="{{ site.baseurl }}">Inicio</a></li>
-        					<li><a href="/categoria/desarrollo">Desarrollo</a></li>
-        					<li><a href="/categoria/diseno">Diseño</a></li>
-        					<li><a href="/categoria/opinion">Opinión</a></li>
-        				</ul>
-        			</nav>
-        		</span>
-        	</div>
+        <header class="site-nav">
+            <div class="wrapper">
+                <a href="/" class="site-nav__logo"><span class="underscore">_</span>  DRØMBIT BLOG</a>
+                <nav class="site-nav__menu">
+                    <ul class="menu list-inline">
+                        <li><a href="/categoria/desarrollo">Desarrollo</a></li>
+                        <li><a href="/categoria/diseno">Diseño</a></li>
+                        <li><a href="/categoria/opinion">Opinión</a></li>
+                    </ul>
+                    
+                    <div class="js-menu-mobile"><button type="button" class="btn btn--mini btn--secondary">Temas</button></div>
+                </nav>
+            </div>
         </header>
-
-	    <section class="blog">
-	    	{{ content }}
-	    </section>
-
-	    <footer class="footer">
-			<h3>Acerca de Drombit</h3>
-			<p>Nos especializamos en el desarrollo de sistemas y sitios web a la medida</p>
-			<a href="http://www.drombit.com" class="btn">Nuestro Portafolio</a>
+        <div class="site-content">
+            <section class="site-blog">
+                <div class="wrapper">
+                    {{ content }}
+                </div>
+            </section>    
+        </div>
+	    
+	    <footer class="site-contact-us">
+            <div class="site-contact-us__action">
+                <h3>Desarrollamos y Diseñamos aplicaciones web a la medida.</h3>
+                <a href="http://www.drombit.com" class="btn btn--ghost">Visita Nuestro Portafolio</a>
+            </div>
 		</footer>
         <!-- Facebook BTN -->
         <div id="fb-root"></div>

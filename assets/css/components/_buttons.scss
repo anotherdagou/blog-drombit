@@ -1,0 +1,224 @@
+/*------------------------------------*\
+	Base Button
+\*------------------------------------*/
+
+/*doc
+---
+title: Botones
+name: botones
+category: Componentes - Botones
+---
+
+la clase `btn` permite definir la base de un boton. Siempre que sea posible utilizar
+los elementos HTML `<button>` y `<a>`. 
+
+
+```html_example
+<button class="btn">Botón</button>
+```
+*/
+
+.btn{	
+	display:inline-block;
+	cursor: pointer;
+	line-height: 1.2;
+	overflow: hidden;
+	text-align: center;
+	border: 1px solid darken(#EAEAEA,10);
+	color: #000;
+	background-color: #EAEAEA;
+	@include padding-two-values(7px,24px);
+	@include transition (all .5s ease);
+	@include backgroundHover(#EAEAEA);
+	@include magic-font(16px,1);
+
+  	&.is-disabled, &[disabled]{
+    	background-color: #DBE6EC;
+    	color: white;
+    	cursor: default;
+    	border: 1px solid darken(#DBE6EC,5);
+	}
+}
+
+
+
+/*------------------------------------*\
+	Button Size Modifiers
+\*------------------------------------*/
+/*doc
+---
+title: Tamaño de botones
+category: Componentes - Botones
+---
+
+Podemos manejar diferentes tamaños de botones añadiendo las siguientes clases 
+
+| `btn btn--mini`                                   | `btn btn--small`                                       | `btn btn--medium`                                      | `btn`                                                 |
+|---------------------------------------------------|--------------------------------------------------------|--------------------------------------------------------|-------------------------------------------------------|
+|<button class="btn btn--mini">Botón mini</button>  | <button class="btn btn--small">Botón pequeño</button>  | <button class="btn btn--medium">Botón mediano</button> | <button class="btn">Botón Default</button>            |
+
+`btn btn--full`                                  
+<button class="btn btn--full">Botón Full</button> 			          
+*/
+
+.btn--full{
+	display:block;
+	width:100%;
+}
+
+.btn--medium{
+	@include padding-two-values(5px,36px);
+}
+
+.btn--small{
+	@include padding-two-values(3.5px,24px);
+}
+
+.btn--mini{
+	@include magic-font(12px,.7);
+	@include padding-two-values(3px,12px);
+}
+
+
+
+/*------------------------------------*\
+	Button Styles 
+\*------------------------------------*/
+/*doc
+---
+title: Estilos de botones
+category: Componentes - Botones
+---
+
+Para generar diferentes estilos de botones, además de utilizar la clase 'btn' añadir la siguientes clases
+
+|                                                   |                                                              |
+|---------------------------------------------------|--------------------------------------------------------------| 
+| `btn btn--primary`                                | <button class="btn btn--primary">Botón Primario</button>     | 
+| `btn btn--secondary`                              | <button class="btn btn--secondary">Botón Secundario</button> |
+| `btn btn--red`                                    | <button class="btn btn--red">Botón Rojo</button>             |
+| `btn btn--green`                                  | <button class="btn btn--green">Botón Verde</button>          |
+| `btn btn--blue`                                   | <button class="btn btn--blue">Botón Azul</button>            |
+| `btn btn--yellow`                                 | <button class="btn btn--yellow">Botón Amarillo</button>      |
+| `btn btn--black`                                  | <button class="btn btn--black">Botón Negro</button>          |
+| `btn btn--ghost`                                  | <button class="btn btn--ghost">Botón Ghost</button>          |
+*/
+
+.btn--primary{
+	background-color: $brandColor;
+	@include backgroundHover($brandColor);
+	border-color: darken($brandColor,15);
+	color: lighten($brandColor,50);
+}
+
+.btn--secondary{
+	background-color: $brandColorComplement;
+	@include backgroundHover($brandColorComplement);
+	border-color: darken($brandColorComplement,15);
+	color: lighten($brandColorComplement,50);
+}
+
+.btn--red{
+	background-color:$colorRed;
+	@include backgroundHover($colorRed);
+	border-color: darken($colorRed,15);
+	color: lighten($colorRed,50);
+}
+
+.btn--green{
+	background-color:$colorGreen;
+	@include backgroundHover($colorGreen);
+	border-color: darken($colorGreen,15);
+	color: lighten($colorGreen,50);
+}
+
+.btn--blue{
+	background-color:$colorBlue;
+	@include backgroundHover($colorBlue);
+	border-color: darken($colorBlue,15);
+	color: lighten($colorBlue,50);
+}
+
+.btn--yellow{
+	color:darken($colorYellow,40);
+	background-color:$colorYellow;
+	@include backgroundHover($colorYellow);
+	border-color: darken($colorYellow,15);
+	color: lighten($colorYellow,30);
+}
+
+.btn--black{
+	background-color:$colorBlack;
+	@include backgroundHover($colorBlack);
+	border-color: darken($colorBlack,15);
+	color: lighten($colorBlack,50);
+}
+
+.btn--ghost{
+	background-color: transparent;
+	@include backgroundHover( $brandColor);
+	border-color: darken($brandColor,5);
+	color: lighten($brandColor,50);
+}
+
+
+
+/*doc
+---
+title: Botones con Iconos
+category: Componentes - Botones
+---
+
+Con ayuda de 'icon fonts' podemos utilizar iconos dentro de nuestos botones
+
+```html_example
+<button class="btn"><i class="icon-glass"></i>Botón con iconos</button>
+<button class="btn btn--medium"><i class="icon-heart"></i>Botón con iconos</button>
+<button class="btn btn--mini"><i class="icon-star"></i>Botón con icono</button>
+```
+*/
+.btn > [class^="icon-"]{
+	position:relative;
+	vertical-align: -2px;
+	@include margin-right(6px);
+}
+
+
+/*doc
+---
+title: Grupo de botones
+category: Componentes - Botones
+---
+
+Agrupando elementos de tipo botón.
+
+```html_example
+<button class="btn"><i class="icon-glass"></i>Botón con iconos</button>
+<button class="btn btn--medium"><i class="icon-heart"></i>Botón con iconos</button>
+<button class="btn btn--mini"><i class="icon-star"></i>Botón con icono</button>
+```
+*/
+.button-group {
+	> .btn { 
+		margin-left: -4px;
+		margin-right: -4px;
+
+		&:first-child {
+			border-top-left-radius: 4px;
+			border-bottom-left-radius: 4px;
+		}
+
+		&:last-child {
+			border-top-right-radius: 4px;
+			border-bottom-right-radius: 4px;
+		}
+
+		&.active {
+			@extend .btn--secondary;
+		}
+
+		@include media(max-width 480px) {
+			font-size: 12px;
+		}
+	}
+}

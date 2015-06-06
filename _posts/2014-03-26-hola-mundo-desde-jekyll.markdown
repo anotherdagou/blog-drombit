@@ -7,6 +7,8 @@ date: 2014-03-26T05:00:00.000Z
 comments: true
 categories:
   - desarrollo
+tags:
+  - Jekyll
 ---
 Hace aproximadamente 1 A&ntilde;o [Alberto Pat](http://twitter.com/apmsuperior) y yo decidimos desarrollar un portafolio para promocionar nuestro trabajo. Cuando comenzamos el desarrollo de nuestro portafolio una de las cosas que siempre tuvimos en mente fue crear un blog para compartir nuestras ideas, conocimientos e inquietudes. Pero, por diversas circunstancias nunca pudimos concretar el blog para [Dr&oslash;mbit](http://www.drombit.com).
 

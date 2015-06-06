@@ -1,0 +1,115 @@
+/*------------------------------------*\
+	$TIPOGRAFIA
+\*------------------------------------*/
+/* Common margin-bottom for vertical rhythm. */
+h1,h2,h3,h4,h5,h6,hgroup,
+ul,ol,dl,
+blockquote,
+p,
+address,
+table,
+fieldset,
+figure,
+pre,
+hr,
+{
+	margin: 0;
+    @include margin-bottom(36px)
+}
+
+
+/* 
+ * Mobile First Typography 
+ */
+
+ /* These handle massive type, for less frequently occuring bits of text (e.g. in mastheads and banners). */
+.giga{
+    font-size:80px;
+    font-size:5rem;     /* 80px */
+    line-height:1.2;    /* 96px */
+}
+.mega{
+    font-size:64px;
+    font-size:4rem;     /* 64px */
+    line-height:1.125;  /* 72px */
+}
+.kilo{
+    @include magic-font(36px,1);
+}
+
+/* Define headings and their associated classes here. */
+h1,.alpha{
+    @include magic-font(22.000px,1.4);
+}
+h2,.beta{
+    @include magic-font(18.750px,1);
+}
+h3,.gamma{
+    @include magic-font(17.600px,1);
+}
+h4,.delta{
+    @include magic-font(15.000px,1);
+}
+h5,.epsilon{
+    @include magic-font(14.080px,1);
+}
+h6,.zeta{
+    @include magic-font(12px,1);
+}
+
+.zeta-milli{
+    @include magic-font(11.264px,1);
+}
+
+/* Smaller-than-body-copy sizes here. */
+small,.milli {
+    @include magic-font(11.264px,1);
+}
+
+@include media($desktop){
+    /* These handle massive type, for less frequently occuring bits of text (e.g. in mastheads and banners). */
+    .giga{
+        font-size:80px;
+        font-size:5rem;     /* 80px */
+        line-height:1.2;    /* 96px */
+    }
+    .mega{
+        font-size:64px;
+        font-size:4rem;     /* 64px */
+        line-height:1.125;  /* 72px */
+    }
+    .kilo{
+        font-size:48px;
+        font-size:3rem;     /* 48px */
+        line-height:1;      /* 48px */
+    }
+
+    /* Define headings and their associated classes here. */
+    h1,.alpha{
+        @include magic-font(32px,1.8);
+    }
+    h2,.beta{
+        @include magic-font(26.653px,1);
+    }
+    h3,.gamma{
+        @include magic-font(24.006px,1);
+    }
+    h4,.delta{
+        @include magic-font(19.995px,1);
+    }
+    h5,.epsilon{
+        @include magic-font(18.009px,1);
+    }
+    h6,.zeta{
+        @include magic-font(15px,1);
+    }
+
+    .zeta-milli{
+        @include magic-font(15px,1);
+    }
+
+    /* Smaller-than-body-copy sizes here. */
+    small,.milli {
+        @include magic-font(12px,1);
+    }
+}

@@ -3,21 +3,21 @@ layout: default
 title: Inicio
 description: Blog de Drombit
 ---			
-			{% for post in paginator.posts %}    
-			<div class="article-wrap">
-				<article class="article">
-					<a href="{{ post.url }}" class="article-title"><h1>{{ post.title }}</h1></a>
-					<span class="article-date-author">
+			{% for post in paginator.posts %}  
+				<article class="site-blog__article">
+					<a href="{{ post.url }}" class="article__title"><h1>{{ post.title }}</h1></a>
+					<span class="article__date-author">
 						<span class="article-author">
-							Por {% for member in site.data.members %}{% if member.name contains post.author %}<a href="http://www.twitter.com/{{member.twitter}}">{{member.name}}</a>{% endif%}{% endfor %}
+							{% for member in site.data.members %}{% if member.name contains post.author %}<a href="http://www.twitter.com/{{member.twitter}}">{{member.name}}</a>{% endif%}{% endfor %}
 						</span>
-						<span> / <time class="article-date" pubdate datetime="{{ post.date | date_to_string }}">{{ post.date | date_to_string }}</time></span>
+						<span> - <time class="article-date" pubdate datetime="{{ post.date | date_to_string }}">{{ post.date | date_to_string }}</time></span>
 					</span>
+                    <div class="article__excerpt">{{ post.excerpt }}</div>
+                    <a href="{{ post.url }}" class="article__readmore"> Continuar Leyendo</a>
 				</article>
-			</div>
 			{% endfor %}
 
-			<div class="pagination">
+			<div class="site-pagination">
 	            {% if paginator.previous_page %}
 	              {% if paginator.previous_page == 1 %}
 	              <a href="/" class="previous">Anterior</a>

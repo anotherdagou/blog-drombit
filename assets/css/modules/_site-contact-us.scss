@@ -1,0 +1,19 @@
+.site-contact-us {
+	background: $brandColorComplement;
+	text-align: center;
+	color: #fff;
+}
+	.site-contact-us__action {
+		@include padding-top(12px);
+		@include padding-bottom(12px);
+
+		> .btn--ghost {
+			border-color: $brandColorGray;
+			color: $brandColorGray;
+		}
+
+		@include media($tablet) {
+			@include padding-top(48px);
+			@include padding-bottom(48px);
+		}
+	}

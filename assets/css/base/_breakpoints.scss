@@ -1,0 +1,12 @@
+// Define your breakpoints
+$mobile: 		new-breakpoint(max-width 320px 4);
+$tablet: 		new-breakpoint(min-width 768px 9);
+$desktop: 		new-breakpoint(min-width 1024px 12);
+
+/* For fix some modules in responsive */
+$mobile-special: new-breakpoint(min-width 321px max-width 480px 8);
+$tablet-special: new-breakpoint(min-width 481px  max-width 767px 8);
+
+/* Only fot smartphones and tablets in orientation landscape */
+$mobile-landscape: new-breakpoint(min-width 320px max-width 480px orientation landscape);
+$tablet-landscape: new-breakpoint(min-width 480px max-width 2048px orientation landscape);

@@ -1,0 +1,187 @@
+/* 
+ * Se definen los contenedores principales para funcionar
+ * con el sistema de rejillas de Neat
+ *
+ * 1. Se incluye el mixin utilizado por Neat para el manejo de la rejilla 
+ */
+
+.wrapper{
+	@include outer-container; /* [1] */
+	@include padding-two-values(0px, 12px);
+}
+
+
+// Contenedor principal para ancho completo
+
+.wrapper-full{
+	$max-width: 100%;
+	@include outer-container; /* [1] */
+}
+
+
+
+/* 
+ * EL menu del sitio se mantiene fijo todo el tiempo,
+ * definimos un contenedor global para mostrar el contenido del sitio
+ */
+.site-content { 
+	@include padding-top(144px);
+}
+
+
+
+/* 
+ * Por defecto los enlaces son de color azul ($brandComplementColor)
+ * sin embargo, en fondos oscuros utilizamos una variación del enlace. 
+ * 
+ * Las reglas actuales extienden el estilo de los enlaces en _initial.scss:
+ */
+
+.link-alt {
+	color: $brandColorGray;
+
+	&.active,
+	&:hover {
+		color: $brandColorComplement;
+	}
+}
+
+// Color del enlace cuando esta activo en tabs o menús.
+.link-active { color: $brandColorComplement; }
+
+
+/* 
+ * Basic classes without context(use in any place)
+ */
+/*doc
+---
+title: Utilidades
+category: Utilidades
+---
+Clases que funcionan como utilidades, pueden ser utilizadas en cualquier modulo o componente
+
+```html_example
+<h1>Parrafo escondido</h1>
+<p class="hide">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem nisi assumenda 
+	qui aperiam quasi consectetur amet, voluptatibus esse placeat, magnam doloribus 
+	atque praesentium, suscipit earum quisquam iure ipsum nesciunt aut!
+<p>
+<hr>
+<h1 class="text-left">justificación a la  izquierda</h1>
+<hr>
+<h1 class="text-right">justificación a la  derecha</h1>
+<hr>
+<h1 class="text-center">Texto Centrado</h1>
+```
+*/
+
+.clearfix { @include clearfix }
+
+.hide{ display: none; }
+
+.float-left{ float: left; }
+
+.float-right{ float: right; }
+
+.text-left{text-align:left;}
+
+.text-center{ text-align:center; }
+
+.text-right{text-align:right;}
+
+.text-justify{text-align:justify;}
+
+.text-elipsis{
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 200px;
+}
+
+.no-margin{ margin:0; }
+
+// Style for horizontal list
+.list-inline{
+	list-style: none;
+	padding-left: 0;
+	
+	@include media($tablet) {
+		li { 
+			display: inline-block;
+			@include padding-left(12px);
+			@include padding-right(12px);
+
+			&:first-child{@include padding-left(0px)}
+			&:last-child{@include padding-right(0px)} 
+		}
+	}
+}
+
+
+/* 
+ * Styles for tables
+ */
+.table{
+	width: 100%;
+	border: 1px solid #f0f0f0;
+
+	thead{
+		background:darken(#f0f0f0,20);
+		text-align: left;
+	}
+
+	tr{ 
+		border-bottom: 1px solid darken(#f0f0f0,5);	
+		th,td{
+			@include padding-two-values(6px,12px);
+		}
+	}
+
+	@include media($mobile){
+		@include magic-font(12px,1);
+	}
+}
+
+
+/* 
+ * Media Object
+ */
+.media-object {
+	@include clearfix;
+	@include margin-bottom(48px);
+
+	> .media-object__media {
+		float: left;
+		margin-right: 24px;
+		margin-bottom: 24px;
+
+		@include media($mobile) {
+			float: none;
+			display: block;
+			text-align: center;
+		}
+	}
+}
+
+blockquote {
+	@include magic-font(18px,1.2);
+	color: lighten($brandColor,35);
+	position: relative;
+
+	&:before {
+		content: "\e0a2";
+		display: block;
+		color: $brandColorComplement;
+		position: absolute;
+		left: -96px;
+		top: 12px;
+		font-size: 72px;
+		line-height: 0;
+		font-family: drombit;
+	}
+
+	@include media($tablet){
+		@include magic-font(22px,1.5);
+	}
+}

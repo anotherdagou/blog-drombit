@@ -1,0 +1,108 @@
+.site-nav {
+	background: $brandColor;
+	position: fixed;
+	left: 	0;
+	right: 	0;
+	z-index: 100;
+	@include padding-two-values(21px,0px); 
+	@include transform(translate3d(0,0,0));
+}
+
+
+
+	.site-nav__logo {
+		color: #fff;
+		font-size: 36px;
+		font-weight: 500;
+		line-height: 1.2;
+		float: left;
+		position: relative;
+		z-index: 100;
+		
+		.underscore {
+			position: relative;
+			top:-3px;
+			right: -10px;
+			color: $brandColorComplement;
+			@include animation(blink 1s ease-in infinite alternate);
+		}
+	}
+	
+
+
+	/* 
+	 * Este sitio web esta construido con la metodología Mobile First, por lo tanto
+	 * el menú por defecto se presenta en modo móvil, cuando el Viewport es mayor a el media query
+	 * de tipo tablet, el menú se muestra en su modo para escritorio.
+	 *
+	 * Para evitar duplicar el contenido del menú (en modo móvil y escritorio), se utiliza 
+	 * el mismo menú y con ayuda de los media queries se presenta de diferente manera.
+	 *
+	 * 1. Escondemos el menú fuera del viewport.
+	 * 2. Aplicamos una transición cuando el menú se activa y se desactiva 
+	 * 3. Clase que se añade cuando se activa el menú en móvil
+	 */
+	.site-nav__menu { 
+		.menu { 			
+			@include transform(translateY(-200px)); /* [1] */
+			position: absolute;
+			display: block;
+			text-align: right;
+			right: 	0;
+			left: 	0;
+			padding-left: 	0;
+			margin-bottom: 	0; 
+			background: lighten($brandColor,2);
+			z-index: -10;
+			@include transition(transform 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94)); /* [2] */
+
+			a { 
+				color: $brandColorGray; 
+				&:hover { color: $brandColorComplement; }
+			}
+
+			// Se muestra el menu en su modo escritorio
+			@include media($tablet) {
+				@include transform(translateY(0px));
+				position: initial;
+				background: none;
+				z-index: -10;
+			}
+
+			> li {
+				@include padding-left(12px);
+				@include padding-top(6px);
+				@include padding-bottom(6px);
+				text-align: center;
+			}
+		}
+
+		> .menu--mobile { /* [3] */
+			@include transform(translateY(84px));
+			opacity: 1;
+
+			@include media(min-width 381px) {
+				@include transform(translateY(64px));
+			}
+		}
+
+		// Elemento que activa el menú en modo móvil, solo visible en el modo móvil
+		> .js-menu-mobile { 
+			text-align: center;
+
+			> button {
+				@include margin-top(6px);
+			}
+
+			@include media(min-width 381px) { float: right;}
+
+			@include media($tablet) { display: none }
+		}
+	}
+	
+
+// Animaciones CSS	
+@include keyframes(blink) {
+	from 	{ opacity: 0; }
+	to 		{ opacity: 1; }
+}

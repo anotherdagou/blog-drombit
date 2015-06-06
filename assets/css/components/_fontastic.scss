@@ -1,0 +1,49 @@
+/*------------------------------------*\
+	Base icon-fonts
+\*------------------------------------*/
+[class^="icon-"]:before, [class*=" icon-"]:before{
+	position:relative;
+	vertical-align: -3px;
+	@include margin-right(3px);
+}
+
+/*doc
+---
+title: Iconos
+name: a-Iconos
+category: Componentes - Iconos
+---
+
+Para el manejo de iconos vamos a utilizar el servicio Fontastic, este servicio nos permite
+generar iconos de una manera rápida y utilizarlos a través de la propiedad de css font-face.
+
+Una de las características importantes que tiene este servicio es la posibilidad de actualizar 
+nuestra lista de iconos añadiendo o eliminando iconos según sea el caso. Cuando queramos actualizar nuestra lista de iconos
+debemos acceder a <a href="http://app.fontastic.me/">Fontastic</a>, procedemos a añadir o eliminar iconos de las diferentes librerías gratuitas
+que el servicio ofrece.
+
+Posteriormente seleccionamos el tab `Publish` y seleccionamos la descarga manual de los iconos, una vez descargados; descomprimimos el archivo y copiamos
+las fuentes al directorio `boilerplate-drombit/build/css/assets/css/fonts`. Dentro del archivo que descomprimimos existe un archivo style,css, este archivo
+lo renombramos a fontastic.scss y lo colocamos en el directorio `boilerplate-drombit/source/sass/fonts`. De esta manera tendremos actualizado nuestra librería de iconos.
+
+<span>
+	<i class="icon-adn"></i>
+	`icon-adn`
+</span></br>
+<span>
+	<i class="icon-android"></i>
+	`icon-android`
+</span></br>
+<span>
+	<i class="icon-exclamation-circle"></i>
+	`icon-exclamation-circle`
+</span></br>
+<span>
+	<i class="icon-exclamation-triangle"></i>
+	`icon-exclamation-triangle`
+</span>
+
+Para ver una referencia más detallada sobre como llamar a los iconos visitar la App de <a href="http://app.fontastic.me/">Fontastic</a> y entrar al area de `Publish`.
+*/
+
+

@@ -1,30 +1,44 @@
+@charset "UTF-8";
 /*------------------------------------*\
 	$CONTENTS
 \*------------------------------------*/
 /**
   *  DESCRIPCION............ Descripción del proyecto
   *  GFONTS................. Fuentes de Google
+  *  BURBOUN NEAT .......... Framework en SASS para el diseño responsivo 
   *  NORMALIZE.............. Normaliza los estilos
-  *  VARIABLES & MIXINS..... Variables & Mixins (magic)
-  *  GRID-SETTINGS.......... Framework en SASS para el diseño responsivo Y Mixins Propios
+  *  VARIABLES & MIXINS..... Variables Y Mixins Propios (Magic)
   *  BASE................... Estilos Base para el sitio web
-  *	 TIPOGRAFIA............. Estilos para las fuentes tipograficas por Harry de CssWizardry
-  *  CLASES................. Clases principales del sitio web
-  *  SECCIONES.............. Secciones y modulos de la pagina
-  *  MEDIA-QUERIES.......... Media queries para diferentes resoluciones
+  *	 TIPOGRAFIA............. Estilos para las fuentes tipográficas por Harry de CssWizardry
+  *  CLASES................. Clases comunes que se utilizan en todos los proyectos.
+  *  COMPONENTES............ Elementos que forman el sitio web (botones,tablas,listas,etc), un conjunto de componentes nos ayudan a crear Modulos.
+  *  MODULOS................ Módulos del sitio
  */
 /*------------------------------------*\
 	$DESCRIPCION
 \*------------------------------------*/
 /**
- *  Blog Drombit
- *  Fecha = 05/03/2014
- *  Desarrollado con Jekill + Burbon 
+ *  Sitio Web de Drombit
+ *  Fecha: 28/04/2015
+ *  Nueva versión del sitio web de Drømbit
+ *  www.drombit.com
+ *  Autor: Diego Armando Catalan Tandi - Alberto Pat Martinez
 */
 /*------------------------------------*\
 	$GFONTS
 \*------------------------------------*/
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,800,300,200);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,500,600,700);
+/*------------------------------------*\
+	$BOURBON NEAT
+\*------------------------------------*/
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+/* For fix some modules in responsive */
+/* Only fot smartphones and tablets in orientation landscape */
 /*------------------------------------*\
 	$NORMALIZE
 \*------------------------------------*/
@@ -477,14 +491,8 @@ table {
   border-spacing: 0; }
 
 /*------------------------------------*\
-	$VARIABLES & MIXUPS
+	MIXINS
 \*------------------------------------*/
-/* 
- * Colores base del sitio
-*/
-/* 
- * Variables para la tipografia
-*/
 /*------------------------------------*\
 	MIXINS PERSONALES
 \*------------------------------------*/
@@ -497,64 +505,70 @@ table {
  * Para mantener un mejor ritmo vertical
 */
 /* 
- * Magins
+ * Margins
 */
 /* 
- * Mixin para animación en botones 
-*/
+ * Vertical Align 
+ */
+/* 
+ * Mixin para centrar el contenedor 
+ * principal de la regilla
+ */
+/* 
+ * Mixin para cambiar el fondo de un elemento durante el envento hover
+ */
+/* 
+ * Mixin para cambiar el color de un elemento durante el evento hover
+ */
+/* 
+ * Omega reset
+ */
+/* 
+ * Mixin para recortar el texto
+ */
 /*------------------------------------*\
-	$Grid Settings
+	$ESTILOS BASE
 \*------------------------------------*/
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-/* 
- * Grid de Burboun Neat
-*/
 /*------------------------------------*\
-	$BASE
+	Colores base del sitio
+\*------------------------------------*/
+/*------------------------------------*\
+	Colores RGB, Yellow, Black and Gray
+\*------------------------------------*/
+/*------------------------------------*\
+	Variables para la tipografía 
 \*------------------------------------*/
 body {
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.5;
-  font-family: "Raleway", sans-serif;
-  background: white;
-  color: #606060;
-  font-weight: 500; }
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429;
+  font-family: Raleway, helvetica, arial;
+  color: #18191C;
+  background: #fff; }
+  @media screen and (min-width: 1024px) {
+    body {
+      font-size: 16px;
+      font-size: 1rem;
+      line-height: 1.8;
+      padding: 0px;
+      padding: 0rem; } }
 
 a {
-  color: #57c3c9;
+  color: #57C3C9;
   text-decoration: none; }
+
+ul {
+  list-style: initial; }
+  ul ul {
+    list-style: circle;
+    margin-bottom: 0px; }
 
 img {
   vertical-align: middle;
   max-width: 100%; }
 
-ul, ol {
-  list-style-position: inside; }
-
-/* 
- * Formato para el código
- * Utilizado en Pygments
- */
-.highlight {
-  padding: 12px;
-  padding: 0.75rem;
-  margin-bottom: 48px;
-  margin-bottom: 3rem;
-  margin-left: 48px;
-  margin-left: 3rem;
-  margin-right: 48px;
-  margin-right: 3rem; }
-  @media screen and (max-width: 480px) {
-    .highlight {
-      margin-left: 0px;
-      margin-left: 0rem;
-      margin-right: 0px;
-      margin-right: 0rem; } }
+mark {
+  background: #f7ecb5; }
 
 /*------------------------------------*\
 	$TIPOGRAFIA
@@ -563,24 +577,23 @@ ul, ol {
 	$TIPOGRAFIA
 \*------------------------------------*/
 /* Common margin-bottom for vertical rhythm. */
-h1, h2, h3, h4, h5, h6,
+h1, h2, h3, h4, h5, h6, hgroup,
 ul, ol, dl,
-fieldset,
+blockquote,
 p,
+address,
 table,
-hr,
-section,
-article,
-header,
-footer,
-img {
+fieldset,
+figure,
+pre,
+hr {
   margin: 0;
-  margin-bottom: 48px;
-  margin-bottom: 3rem; }
+  margin-bottom: 36px;
+  margin-bottom: 2.25rem; }
 
-p > img {
-  margin-bottom: 0px; }
-
+/* 
+ * Mobile First Typography 
+ */
 /* These handle massive type, for less frequently occuring bits of text (e.g. in mastheads and banners). */
 .giga {
   font-size: 80px;
@@ -597,372 +610,791 @@ p > img {
   /* 72px */ }
 
 .kilo {
-  font-size: 48px;
-  font-size: 3rem;
-  /* 48px */
-  line-height: 1;
-  /* 48px */ }
+  font-size: 36px;
+  font-size: 2.25rem;
+  line-height: 0.66667; }
 
 /* Define headings and their associated classes here. */
 h1, .alpha {
-  font-size: 32px;
-  font-size: 2rem;
-  line-height: 1.5;
-  margin-bottom: 48px;
-  margin-bottom: 3rem; }
+  font-size: 22px;
+  font-size: 1.375rem;
+  line-height: 1.52727; }
 
 h2, .beta {
-  font-size: 24px;
-  font-size: 1.5rem;
-  line-height: 1; }
+  font-size: 18.75px;
+  font-size: 1.17188rem;
+  line-height: 1.28; }
 
 h3, .gamma {
-  font-size: 20px;
-  font-size: 1.25rem;
-  line-height: 1.2; }
+  font-size: 17.6px;
+  font-size: 1.1rem;
+  line-height: 1.36364; }
 
 h4, .delta {
-  font-size: 18px;
-  font-size: 1.125rem;
-  line-height: 1.33333; }
-
-h5, .epsilon {
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.5; }
-
-h6, .zeta {
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.5; }
-
-.zeta-milli {
   font-size: 15px;
   font-size: 0.9375rem;
   line-height: 1.6; }
 
-/* Smaller-than-body-copy sizes here. */
-small, .milli {
+h5, .epsilon {
+  font-size: 14.08px;
+  font-size: 0.88rem;
+  line-height: 1.70455; }
+
+h6, .zeta {
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 2; }
 
+.zeta-milli {
+  font-size: 11.264px;
+  font-size: 0.704rem;
+  line-height: 2.13068; }
+
+/* Smaller-than-body-copy sizes here. */
+small, .milli {
+  font-size: 11.264px;
+  font-size: 0.704rem;
+  line-height: 2.13068; }
+
+@media screen and (min-width: 1024px) {
+  /* These handle massive type, for less frequently occuring bits of text (e.g. in mastheads and banners). */
+  .giga {
+    font-size: 80px;
+    font-size: 5rem;
+    /* 80px */
+    line-height: 1.2;
+    /* 96px */ }
+
+  .mega {
+    font-size: 64px;
+    font-size: 4rem;
+    /* 64px */
+    line-height: 1.125;
+    /* 72px */ }
+
+  .kilo {
+    font-size: 48px;
+    font-size: 3rem;
+    /* 48px */
+    line-height: 1;
+    /* 48px */ }
+
+  /* Define headings and their associated classes here. */
+  h1, .alpha {
+    font-size: 32px;
+    font-size: 2rem;
+    line-height: 1.35; }
+
+  h2, .beta {
+    font-size: 26.653px;
+    font-size: 1.66581rem;
+    line-height: 0.90046; }
+
+  h3, .gamma {
+    font-size: 24.006px;
+    font-size: 1.50038rem;
+    line-height: 0.99975; }
+
+  h4, .delta {
+    font-size: 19.995px;
+    font-size: 1.24969rem;
+    line-height: 1.2003; }
+
+  h5, .epsilon {
+    font-size: 18.009px;
+    font-size: 1.12556rem;
+    line-height: 1.33267; }
+
+  h6, .zeta {
+    font-size: 15px;
+    font-size: 0.9375rem;
+    line-height: 1.6; }
+
+  .zeta-milli {
+    font-size: 15px;
+    font-size: 0.9375rem;
+    line-height: 1.6; }
+
+  /* Smaller-than-body-copy sizes here. */
+  small, .milli {
+    font-size: 12px;
+    font-size: 0.75rem;
+    line-height: 2; } }
 /*------------------------------------*\
 	$CLASES
 \*------------------------------------*/
-.btn {
-  display: inline-block;
-  background: #57c3c9;
-  color: white;
-  padding: 12px 24px;
-  padding: 0.75rem 1.5rem;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-transition: .5s all;
-  -moz-transition: .5s all;
-  -ms-transition: .5s all;
-  -o-transition: .5s all;
-  transition: .5s all; }
-  .btn:hover {
-    background: #44bcc3; }
+/* 
+ * Se definen los contenedores principales para funcionar
+ * con el sistema de rejillas de Neat
+ *
+ * 1. Se incluye el mixin utilizado por Neat para el manejo de la rejilla 
+ */
+.wrapper {
+  max-width: 65em;
+  margin-left: auto;
+  margin-right: auto;
+  /* [1] */
+  padding: 0px 12px;
+  padding: 0rem 0.75rem; }
+  .wrapper::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.wrapper-full {
+  max-width: 65em;
+  margin-left: auto;
+  margin-right: auto;
+  /* [1] */ }
+  .wrapper-full::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+/* 
+ * EL menu del sitio se mantiene fijo todo el tiempo,
+ * definimos un contenedor global para mostrar el contenido del sitio
+ */
+.site-content {
+  padding-top: 144px;
+  padding-top: 9rem; }
+
+/* 
+ * Por defecto los enlaces son de color azul ($brandComplementColor)
+ * sin embargo, en fondos oscuros utilizamos una variación del enlace. 
+ * 
+ * Las reglas actuales extienden el estilo de los enlaces en _initial.scss:
+ */
+.link-alt {
+  color: #FAFAFB; }
+  .link-alt.active, .link-alt:hover {
+    color: #57C3C9; }
+
+.link-active {
+  color: #57C3C9; }
+
+/* 
+ * Basic classes without context(use in any place)
+ */
+/*doc
+---
+title: Utilidades
+category: Utilidades
+---
+Clases que funcionan como utilidades, pueden ser utilizadas en cualquier modulo o componente
+
+```html_example
+<h1>Parrafo escondido</h1>
+<p class="hide">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem nisi assumenda 
+	qui aperiam quasi consectetur amet, voluptatibus esse placeat, magnam doloribus 
+	atque praesentium, suscipit earum quisquam iure ipsum nesciunt aut!
+<p>
+<hr>
+<h1 class="text-left">justificación a la  izquierda</h1>
+<hr>
+<h1 class="text-right">justificación a la  derecha</h1>
+<hr>
+<h1 class="text-center">Texto Centrado</h1>
+```
+*/
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: table; }
+
+.hide {
+  display: none; }
+
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+.text-left {
+  text-align: left; }
+
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+.text-justify {
+  text-align: justify; }
+
+.text-elipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 200px; }
+
+.no-margin {
+  margin: 0; }
+
+.list-inline {
+  list-style: none;
+  padding-left: 0; }
+  @media screen and (min-width: 768px) {
+    .list-inline li {
+      display: inline-block;
+      padding-left: 12px;
+      padding-left: 0.75rem;
+      padding-right: 12px;
+      padding-right: 0.75rem; }
+      .list-inline li:first-child {
+        padding-left: 0px;
+        padding-left: 0rem; }
+      .list-inline li:last-child {
+        padding-right: 0px;
+        padding-right: 0rem; } }
+
+/* 
+ * Styles for tables
+ */
+.table {
+  width: 100%;
+  border: 1px solid #f0f0f0; }
+  .table thead {
+    background: #bdbdbd;
+    text-align: left; }
+  .table tr {
+    border-bottom: 1px solid #e3e3e3; }
+    .table tr th, .table tr td {
+      padding: 6px 12px;
+      padding: 0.375rem 0.75rem; }
+  @media screen and (max-width: 320px) {
+    .table {
+      font-size: 12px;
+      font-size: 0.75rem;
+      line-height: 2; } }
+
+/* 
+ * Media Object
+ */
+.media-object {
+  margin-bottom: 48px;
+  margin-bottom: 3rem; }
+  .media-object::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .media-object > .media-object__media {
+    float: left;
+    margin-right: 24px;
+    margin-bottom: 24px; }
+    @media screen and (max-width: 320px) {
+      .media-object > .media-object__media {
+        float: none;
+        display: block;
+        text-align: center; } }
+
+blockquote {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #6a6f7c;
+  position: relative; }
+  blockquote:before {
+    content: "\e0a2";
+    display: block;
+    color: #57C3C9;
+    position: absolute;
+    left: -96px;
+    top: 12px;
+    font-size: 72px;
+    line-height: 0;
+    font-family: drombit; }
+  @media screen and (min-width: 768px) {
+    blockquote {
+      font-size: 22px;
+      font-size: 1.375rem;
+      line-height: 1.63636; } }
 
 /*------------------------------------*\
-	$SECCIONES
+	$COMPONENTES
 \*------------------------------------*/
-/* 
- * Header
+/*------------------------------------*\
+	Base Button
+\*------------------------------------*/
+/*doc
+---
+title: Botones
+name: botones
+category: Componentes - Botones
+---
+
+la clase `btn` permite definir la base de un boton. Siempre que sea posible utilizar
+los elementos HTML `<button>` y `<a>`. 
+
+
+```html_example
+<button class="btn">Botón</button>
+```
 */
-.header {
-  background: #16171a;
-  margin-bottom: 72px;
-  margin-bottom: 4.5rem; }
-  .header .header-inner {
-    max-width: 68em;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 12px 0px;
-    padding: 0.75rem 0rem;
-    text-align: center; }
-    .header .header-inner:after {
-      content: "";
-      display: table;
-      clear: both; }
-    .header .header-inner .logo {
-      color: white;
-      font-size: 32px;
-      font-size: 2rem;
-      line-height: 1.5; }
-  .header #category {
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  line-height: 1.2;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid #d1d1d1;
+  color: #000;
+  background-color: #EAEAEA;
+  padding: 7px 24px;
+  padding: 0.4375rem 1.5rem;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5; }
+  .btn:hover {
+    text-decoration: none;
+    background-color: #d1d1d1; }
+  .btn.is-disabled, .btn[disabled] {
+    background-color: #DBE6EC;
     color: white;
-    font-size: 32px;
-    font-size: 2rem;
-    line-height: 1.5;
-    padding: 6px 12px;
-    padding: 0.375rem 0.75rem;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    background: #2d2f36;
-    cursor: pointer;
-    -webkit-transition: .5s all;
-    -moz-transition: .5s all;
-    -ms-transition: .5s all;
-    -o-transition: .5s all;
-    transition: .5s all; }
-    .header #category:after {
-      content: '';
-      display: inline-block;
-      height: 0;
-      width: 0;
-      border-color: transparent;
-      border-style: solid;
-      border-width: 6px;
-      border-top-color: gray; }
-    .header #category:hover {
-      background: #57c3c9; }
-      .header #category:hover:after {
-        content: '';
-        display: inline-block;
-        height: 0;
-        width: 0;
-        border-color: transparent;
-        border-style: solid;
-        border-width: 6px;
-        border-top-color: white; }
+    cursor: default;
+    border: 1px solid #cadae3; }
+
+/*------------------------------------*\
+	Button Size Modifiers
+\*------------------------------------*/
+/*doc
+---
+title: Tamaño de botones
+category: Componentes - Botones
+---
+
+Podemos manejar diferentes tamaños de botones añadiendo las siguientes clases 
+
+| `btn btn--mini`                                   | `btn btn--small`                                       | `btn btn--medium`                                      | `btn`                                                 |
+|---------------------------------------------------|--------------------------------------------------------|--------------------------------------------------------|-------------------------------------------------------|
+|<button class="btn btn--mini">Botón mini</button>  | <button class="btn btn--small">Botón pequeño</button>  | <button class="btn btn--medium">Botón mediano</button> | <button class="btn">Botón Default</button>            |
+
+`btn btn--full`                                  
+<button class="btn btn--full">Botón Full</button> 			          
+*/
+.btn--full {
+  display: block;
+  width: 100%; }
+
+.btn--medium {
+  padding: 5px 36px;
+  padding: 0.3125rem 2.25rem; }
+
+.btn--small {
+  padding: 3.5px 24px;
+  padding: 0.21875rem 1.5rem; }
+
+.btn--mini {
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 1.4;
+  padding: 3px 12px;
+  padding: 0.1875rem 0.75rem; }
+
+/*------------------------------------*\
+	Button Styles 
+\*------------------------------------*/
+/*doc
+---
+title: Estilos de botones
+category: Componentes - Botones
+---
+
+Para generar diferentes estilos de botones, además de utilizar la clase 'btn' añadir la siguientes clases
+
+|                                                   |                                                              |
+|---------------------------------------------------|--------------------------------------------------------------| 
+| `btn btn--primary`                                | <button class="btn btn--primary">Botón Primario</button>     | 
+| `btn btn--secondary`                              | <button class="btn btn--secondary">Botón Secundario</button> |
+| `btn btn--red`                                    | <button class="btn btn--red">Botón Rojo</button>             |
+| `btn btn--green`                                  | <button class="btn btn--green">Botón Verde</button>          |
+| `btn btn--blue`                                   | <button class="btn btn--blue">Botón Azul</button>            |
+| `btn btn--yellow`                                 | <button class="btn btn--yellow">Botón Amarillo</button>      |
+| `btn btn--black`                                  | <button class="btn btn--black">Botón Negro</button>          |
+| `btn btn--ghost`                                  | <button class="btn btn--ghost">Botón Ghost</button>          |
+*/
+.btn--primary {
+  background-color: #18191C;
+  border-color: black;
+  color: #9296a1; }
+  .btn--primary:hover {
+    text-decoration: none;
+    background-color: #000001; }
+
+.btn--secondary, .button-group > .btn.active {
+  background-color: #57C3C9;
+  border-color: #339aa0;
+  color: white; }
+  .btn--secondary:hover, .button-group > .btn.active:hover {
+    text-decoration: none;
+    background-color: #3aadb3; }
+
+.btn--red {
+  background-color: #DC143C;
+  border-color: #960e29;
+  color: #fef1f4; }
+  .btn--red:hover {
+    text-decoration: none;
+    background-color: #ad102f; }
+
+.btn--green {
+  background-color: #3CB371;
+  border-color: #297a4d;
+  color: #f3fbf7; }
+  .btn--green:hover {
+    text-decoration: none;
+    background-color: #2f8d59; }
+
+.btn--blue {
+  background-color: #6495ED;
+  border-color: #1f66e5;
+  color: white; }
+  .btn--blue:hover {
+    text-decoration: none;
+    background-color: #3676e8; }
+
+.btn--yellow {
+  color: #caac16;
+  background-color: #F7ECB5;
+  border-color: #f0da70;
+  color: white; }
+  .btn--yellow:hover {
+    text-decoration: none;
+    background-color: #f2e087; }
+
+.btn--black {
+  background-color: #505050;
+  border-color: #2a2a2a;
+  color: #d0d0d0; }
+  .btn--black:hover {
+    text-decoration: none;
+    background-color: #373737; }
+
+.btn--ghost {
+  background-color: transparent;
+  border-color: #0c0d0e;
+  color: #9296a1; }
+  .btn--ghost:hover {
+    text-decoration: none;
+    background-color: #000001; }
+
+/*doc
+---
+title: Botones con Iconos
+category: Componentes - Botones
+---
+
+Con ayuda de 'icon fonts' podemos utilizar iconos dentro de nuestos botones
+
+```html_example
+<button class="btn"><i class="icon-glass"></i>Botón con iconos</button>
+<button class="btn btn--medium"><i class="icon-heart"></i>Botón con iconos</button>
+<button class="btn btn--mini"><i class="icon-star"></i>Botón con icono</button>
+```
+*/
+.btn > [class^="icon-"] {
+  position: relative;
+  vertical-align: -2px;
+  margin-right: 6px;
+  margin-right: 0.375rem; }
+
+/*doc
+---
+title: Grupo de botones
+category: Componentes - Botones
+---
+
+Agrupando elementos de tipo botón.
+
+```html_example
+<button class="btn"><i class="icon-glass"></i>Botón con iconos</button>
+<button class="btn btn--medium"><i class="icon-heart"></i>Botón con iconos</button>
+<button class="btn btn--mini"><i class="icon-star"></i>Botón con icono</button>
+```
+*/
+.button-group > .btn {
+  margin-left: -4px;
+  margin-right: -4px; }
+  .button-group > .btn:first-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px; }
+  .button-group > .btn:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px; }
   @media screen and (max-width: 480px) {
-    .header {
-      float: left;
-      display: block;
-      margin-right: 38.19821%;
-      width: 100%; }
-      .header:last-child {
-        margin-right: 0; }
-      .header .header-inner .logo {
-        font-size: 16px;
-        font-size: 1rem;
-        line-height: 1.5; }
-      .header #category {
-        font-size: 16px;
-        font-size: 1rem;
-        line-height: 1.5; }
-        .header #category:after {
-          position: relative;
-          top: 3px;
-          left: 3px;
-          z-index: 0;
-          height: 0;
-          width: 0;
-          border-color: transparent;
-          border-style: solid;
-          border-width: 6px;
-          border-top-color: gray; } }
+    .button-group > .btn {
+      font-size: 12px; } }
+
+/*------------------------------------*\
+	Base icon-fonts
+\*------------------------------------*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  position: relative;
+  vertical-align: -3px;
+  margin-right: 3px;
+  margin-right: 0.1875rem; }
+
+/*doc
+---
+title: Iconos
+name: a-Iconos
+category: Componentes - Iconos
+---
+
+Para el manejo de iconos vamos a utilizar el servicio Fontastic, este servicio nos permite
+generar iconos de una manera rápida y utilizarlos a través de la propiedad de css font-face.
+
+Una de las características importantes que tiene este servicio es la posibilidad de actualizar 
+nuestra lista de iconos añadiendo o eliminando iconos según sea el caso. Cuando queramos actualizar nuestra lista de iconos
+debemos acceder a <a href="http://app.fontastic.me/">Fontastic</a>, procedemos a añadir o eliminar iconos de las diferentes librerías gratuitas
+que el servicio ofrece.
+
+Posteriormente seleccionamos el tab `Publish` y seleccionamos la descarga manual de los iconos, una vez descargados; descomprimimos el archivo y copiamos
+las fuentes al directorio `boilerplate-drombit/build/css/assets/css/fonts`. Dentro del archivo que descomprimimos existe un archivo style,css, este archivo
+lo renombramos a fontastic.scss y lo colocamos en el directorio `boilerplate-drombit/source/sass/fonts`. De esta manera tendremos actualizado nuestra librería de iconos.
+
+<span>
+	<i class="icon-adn"></i>
+	`icon-adn`
+</span></br>
+<span>
+	<i class="icon-android"></i>
+	`icon-android`
+</span></br>
+<span>
+	<i class="icon-exclamation-circle"></i>
+	`icon-exclamation-circle`
+</span></br>
+<span>
+	<i class="icon-exclamation-triangle"></i>
+	`icon-exclamation-triangle`
+</span>
+
+Para ver una referencia más detallada sobre como llamar a los iconos visitar la App de <a href="http://app.fontastic.me/">Fontastic</a> y entrar al area de `Publish`.
+*/
+/*------------------------------------*\
+	$MODULOS
+\*------------------------------------*/
+.site-nav {
+  background: #18191C;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 21px 0px;
+  padding: 1.3125rem 0rem;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.site-nav__logo {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.2;
+  float: left;
+  position: relative;
+  z-index: 100; }
+  .site-nav__logo .underscore {
+    position: relative;
+    top: -3px;
+    right: -10px;
+    color: #57C3C9;
+    -webkit-animation: blink 1s ease-in infinite alternate;
+    -moz-animation: blink 1s ease-in infinite alternate;
+    animation: blink 1s ease-in infinite alternate; }
 
 /* 
- * Blog
-*/
-.blog {
-  margin-bottom: 0; }
-  .blog .article-wrap {
-    border-bottom: 2px solid;
-    border-color: rgba(0, 39, 59, 0.08);
-    margin-bottom: 72px;
-    margin-bottom: 4.5rem; }
-    .blog .article-wrap:last-child {
-      margin-bottom: 0;
-      border-bottom: 0px; }
-  .blog .article {
-    max-width: 68em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 72px;
-    margin-bottom: 4.5rem; }
-    .blog .article:after {
-      content: "";
-      display: table;
-      clear: both; }
-    .blog .article h1 {
-      text-align: center; }
-    .blog .article .article-title {
-      color: #606060;
-      display: block;
-      margin-bottom: 0;
-      text-align: center; }
-      .blog .article .article-title h1 {
-        margin-bottom: 0; }
-    .blog .article .article-date-author {
-      font-size: 14px;
-      font-size: 0.875rem;
-      line-height: 1.71429;
-      margin-bottom: 0;
-      display: block;
-      margin-bottom: 72px;
-      margin-bottom: 4.5rem;
-      text-align: center; }
-    .blog .article .article-date, .blog .article .article-author {
-      border-radius: 4px; }
-      .blog .article .article-date a, .blog .article .article-author a {
-        color: #606060;
-        text-decoration: underline; }
-    .blog .article:after {
-      display: block;
-      content: ''; }
-    .blog .article p, .blog .article h1, .blog .article h2, .blog .article ul, .blog .article ol, .blog .article #disqus_thread {
-      letter-spacing: 1px;
-      padding: 0px 48px;
-      padding: 0rem 3rem; }
-    .blog .article #disqus_thread {
-      margin-top: 72px;
-      margin-top: 4.5rem; }
-  @media screen and (max-width: 768px) {
-    .blog {
-      float: left;
-      display: block;
-      margin-right: 38.19821%;
-      width: 100%;
-      padding: 0px 24px;
-      padding: 0rem 1.5rem; }
-      .blog:last-child {
-        margin-right: 0; }
-      .blog .article p, .blog .article #disqus_thread {
-        letter-spacing: 0px;
-        padding: 0px 0px;
-        padding: 0rem 0rem; } }
-  @media screen and (max-width: 480px) {
-    .blog {
-      float: left;
-      display: block;
-      margin-right: 38.19821%;
-      width: 100%;
-      padding: 0px 24px;
-      padding: 0rem 1.5rem; }
-      .blog:last-child {
-        margin-right: 0; }
-      .blog .article .article-title h1 {
-        font-size: 20px;
-        font-size: 1.25rem;
-        line-height: 1.2;
-        font-size: 18px;
-        font-size: 1.125rem;
-        line-height: 1.33333; }
-      .blog .article p, .blog .article #disqus_thread {
-        letter-spacing: 0px;
-        padding: 0px 0px;
-        padding: 0rem 0rem; }
-      .blog .article h1 {
-        font-size: 20px;
-        font-size: 1.25rem;
-        line-height: 1.2;
-        padding: 0px 0px;
-        padding: 0rem 0rem; } }
-
-.footer {
-  text-align: center;
-  background: #f9f9f9;
-  border-top: 1px solid #e0e0e0;
-  float: left;
+ * Este sitio web esta construido con la metodología Mobile First, por lo tanto
+ * el menú por defecto se presenta en modo móvil, cuando el Viewport es mayor a el media query
+ * de tipo tablet, el menú se muestra en su modo para escritorio.
+ *
+ * Para evitar duplicar el contenido del menú (en modo móvil y escritorio), se utiliza 
+ * el mismo menú y con ayuda de los media queries se presenta de diferente manera.
+ *
+ * 1. Escondemos el menú fuera del viewport.
+ * 2. Aplicamos una transición cuando el menú se activa y se desactiva 
+ * 3. Clase que se añade cuando se activa el menú en móvil
+ */
+.site-nav__menu .menu {
+  -webkit-transform: translateY(-200px);
+  -moz-transform: translateY(-200px);
+  -ms-transform: translateY(-200px);
+  -o-transform: translateY(-200px);
+  transform: translateY(-200px);
+  /* [1] */
+  position: absolute;
   display: block;
-  margin-right: 2.35765%;
-  width: 100%;
-  margin-right: 0;
-  padding: 72px 0px;
-  padding: 4.5rem 0rem;
-  margin-bottom: 0px; }
-  .footer:last-child {
-    margin-right: 0; }
-
-.menu {
-  position: fixed;
-  top: 0;
+  text-align: right;
   right: 0;
-  bottom: 0;
   left: 0;
-  width: 100%;
-  height: 0%;
-  background: #16171a;
-  cursor: auto;
-  display: none;
-  z-index: 10; }
-  .menu #close-menu {
-    opacity: 0;
-    position: absolute;
-    right: 0px;
-    top: 24px;
-    cursor: pointer;
-    z-index: 100;
-    color: #5c606d;
-    display: inline-block;
-    background: #2d2f36;
-    width: 32px;
-    height: 32px;
-    font-size: 16px;
-    line-height: 28px;
-    border-radius: 100%;
-    padding: 3px;
-    padding: 0.1875rem;
-    -webkit-transition: .5s all;
-    -moz-transition: .5s all;
-    -ms-transition: .5s all;
-    -o-transition: .5s all;
-    transition: .5s all; }
-    .menu #close-menu:hover {
-      background: #57c3c9;
-      color: white; }
-  .menu ul {
-    padding: 0;
-    vertical-align: middle;
-    display: none;
-    opacity: 0;
-    position: relative;
-    bottom: -1000px; }
-    .menu ul li {
-      padding: 24px 0px;
-      padding: 1.5rem 0rem; }
-    .menu ul a {
-      color: #454851;
-      -webkit-transition: .5s all;
-      -moz-transition: .5s all;
-      -ms-transition: .5s all;
-      -o-transition: .5s all;
-      transition: .5s all; }
-      .menu ul a:hover {
-        color: #57c3c9; }
-  @media screen and (max-width: 480px) {
-    .menu {
-      float: left;
-      display: block;
-      margin-right: 38.19821%;
-      width: 100%; }
-      .menu:last-child {
-        margin-right: 0; }
-      .menu ul li {
-        padding: 12px 0px;
-        padding: 0.75rem 0rem; } }
+  padding-left: 0;
+  margin-bottom: 0;
+  background: #1d1e21;
+  z-index: -10;
+  -webkit-transition: -webkit-transform 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -moz-transition: -moz-transform 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: transform 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  /* [2] */ }
+  .site-nav__menu .menu a {
+    color: #FAFAFB; }
+    .site-nav__menu .menu a:hover {
+      color: #57C3C9; }
+  @media screen and (min-width: 768px) {
+    .site-nav__menu .menu {
+      -webkit-transform: translateY(0px);
+      -moz-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+      -o-transform: translateY(0px);
+      transform: translateY(0px);
+      position: initial;
+      background: none;
+      z-index: -10; } }
+  .site-nav__menu .menu > li {
+    padding-left: 12px;
+    padding-left: 0.75rem;
+    padding-top: 6px;
+    padding-top: 0.375rem;
+    padding-bottom: 6px;
+    padding-bottom: 0.375rem;
+    text-align: center; }
+.site-nav__menu > .menu--mobile {
+  /* [3] */
+  -webkit-transform: translateY(84px);
+  -moz-transform: translateY(84px);
+  -ms-transform: translateY(84px);
+  -o-transform: translateY(84px);
+  transform: translateY(84px);
+  opacity: 1; }
+  @media screen and (min-width: 381px) {
+    .site-nav__menu > .menu--mobile {
+      -webkit-transform: translateY(64px);
+      -moz-transform: translateY(64px);
+      -ms-transform: translateY(64px);
+      -o-transform: translateY(64px);
+      transform: translateY(64px); } }
+.site-nav__menu > .js-menu-mobile {
+  text-align: center; }
+  .site-nav__menu > .js-menu-mobile > button {
+    margin-top: 6px;
+    margin-top: 0.375rem; }
+  @media screen and (min-width: 381px) {
+    .site-nav__menu > .js-menu-mobile {
+      float: right; } }
+  @media screen and (min-width: 768px) {
+    .site-nav__menu > .js-menu-mobile {
+      display: none; } }
 
-.pagination {
-  text-align: center;
-  margin-bottom: 72px;
-  margin-bottom: 4.5rem; }
-  .pagination .page-number {
-    margin: 0px 24px;
-    margin: 0rem 1.5rem; }
-  .pagination span.next {
-    color: #c6c6c6; }
+@-webkit-keyframes blink {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-moz-keyframes blink {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes blink {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.site-blog__category-title {
+  padding-bottom: 24px;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #dedee4; }
 
-.social-buttons {
+.site-blog__article {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem; }
+
+.article__title > h1 {
+  margin-bottom: 0;
+  color: #18191C; }
+  .article__title > h1:hover {
+    color: #57C3C9; }
+
+.article__date-author {
+  display: inline-block;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  font-family: helvetica;
+  font-size: 14px; }
+
+.article__excerpt > p {
+  margin-bottom: 12px;
+  margin-bottom: 0.75rem; }
+
+.article__readmore {
+  display: inline-block;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase; }
+
+.article__related > ul {
+  list-style: none; }
+.article__related p {
+  margin-top: 12px;
+  margin-top: 0.75rem; }
+.article__related p:empty {
+  display: none; }
+
+.article__social-buttons {
+  border-top: 1px solid #dedee4;
+  border-bottom: 1px solid #dedee4;
+  padding-top: 24px;
+  padding-top: 1.5rem;
+  padding-bottom: 24px;
+  padding-bottom: 1.5rem;
   list-style: none;
-  text-align: center;
-  border-top: 2px solid;
-  border-bottom: 2px solid;
-  border-color: rgba(0, 39, 59, 0.08); }
-  .social-buttons li {
+  text-align: center; }
+  .article__social-buttons li {
     display: inline-block;
-    margin: 48px 6px;
-    margin: 3rem 0.375rem; }
-  .social-buttons .fb-share-button {
+    padding-left: 6px;
+    padding-left: 0.375rem;
+    padding-right: 6px;
+    padding-right: 0.375rem; }
+  .article__social-buttons .fb-share-button {
     position: relative;
     top: -8px; }
-  @media screen and (max-width: 480px) {
-    .social-buttons {
-      padding-left: 0px !important;
-      padding-right: 0px !important; } }
+
+.site-pagination {
+  padding-top: 24px;
+  padding-top: 1.5rem;
+  padding-bottom: 24px;
+  padding-bottom: 1.5rem;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+  border-top: 1px solid #dedee4;
+  font-family: helvetica; }
+  .site-pagination > .next {
+    color: #9797ac; }
+
+.site-contact-us {
+  background: #57C3C9;
+  text-align: center;
+  color: #fff; }
+
+.site-contact-us__action {
+  padding-top: 12px;
+  padding-top: 0.75rem;
+  padding-bottom: 12px;
+  padding-bottom: 0.75rem; }
+  .site-contact-us__action > .btn--ghost {
+    border-color: #FAFAFB;
+    color: #FAFAFB; }
+  @media screen and (min-width: 768px) {
+    .site-contact-us__action {
+      padding-top: 48px;
+      padding-top: 3rem;
+      padding-bottom: 48px;
+      padding-bottom: 3rem; } }

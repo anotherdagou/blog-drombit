@@ -2,23 +2,29 @@
 layout: default
 comments: true
 ---
-<article class="article">
-	<span class="article-title"> <h1>{{ page.title }}</h1></span>
+<article class="site-blog__article">
+	<span class="article__title"> <h1>{{ page.title }}</h1></span>
 	<span class="article-date-author">
-		<span class="article-author">
-			<!-- Asigna el nombre y twitter del Autor -->
-			Por 
+		<span class="article__date-author">
+			<!-- Asigna el nombre y twitter del Autor --> 
 			{% for member in site.data.members %}
 				{% if member.name contains page.author %}
 					<a href="http://www.twitter.com/{{member.twitter}}">{{member.name}}</a>
 				{% endif %}
 			{% endfor %}
 		</span>
-		<span> / <time class="article-date" pubdate datetime="{{ page.date | date_to_string }}">{{ page.date | date_to_string }}</time></span>
+		<span> - <time class="article-date" pubdate datetime="{{ page.date | date_to_string }}">{{ page.date | date_to_string }}</time></span>
 	</span>
 	{{ content }}
-	<!-- Area para los botones de compartir -->
-	<ul class="social-buttons">
+
+    <!-- Artículos relacionados -->
+    <div class="article__related">
+        <h2>Tal vez te puede interesar</h2>
+        {% related_posts 3 %}
+    </div>
+        
+	<!-- Área para los botones de compartir -->
+	<ul class="article__social-buttons">
 		<li class="social-twitter">
 			<a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-lang="es">Twittear</a>
 			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
@@ -39,6 +45,7 @@ comments: true
 			<div class="fb-share-button" data-type="box_count"></div>
 		</li>
 	</ul>
+    
 	{% if page.comments %} 
 		<p><div id="disqus_thread"></div></p>
 	    <script type="text/javascript">
