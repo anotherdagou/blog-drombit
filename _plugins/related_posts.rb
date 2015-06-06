@@ -1,5 +1,5 @@
 # By Chrissloey
-# source: https://gist.github.com/chrissloey/58d9d17a1807745118f5
+# source:  https://gist.github.com/chrissloey/58d9d17a1807745118f5
 module Jekyll
   class RelatedBlogPosts < Liquid::Tag
     def initialize(tag_name, amount, tokens)
