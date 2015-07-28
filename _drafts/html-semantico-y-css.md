@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HTML Semántico Y CSS
+title: Afectan al SEO las clases CSS en el HTML
 description: Analizando la mejor forma de escribir HTML Semántico y como CSS puede interferir en este proceso.
 author: Diego
 date: 2015-07-28T18:28:00.000Z
@@ -14,31 +14,14 @@ tags:
 
 Llevo escribiendo **CSS** por un buen tiempo, conforme uno va escribiendo CSS o cualquier otro lenguaje, uno empieza a interesarse en las mejores practicas que permitan que tu c&oacute;digo sea m&aacute;s modular, m&aacute;s escalable, m&aacute;s semantico, etc.
 
-Si tu intenci&oacute;n es desarrollar sitios web que sean facilmente indexables por los buscadores y permitan explotar todas sus caracteristicas debes de cuidar que el c&oacute;digo HTML que generas sea semantico. Valiendote de las diferentes etiquetas que HTML5 nos ofrece.
+Si tu intenci&oacute;n es desarrollar sitios web que sean facilmente indexables por los buscadores y permitan explotar todas sus caracteristicas debes de cuidar que el c&oacute;digo HTML que generas sea semantico. Valiendote de las diferentes etiquetas y propiedades que HTML 5 nos ofrece.
 
-Cuando desarrollas sitios o aplicaciones web es muy comun estar escribiendo una y otra vez los bloques basicos de un sitio: botones, listas, grid, etc. Para agilizar este proceso lo m&aacute;s comun es utilizar algun Framework que nos ayude a comenzar con una base solida.
+## Afectan al SEO las clases CSS en el HTML
 
-En lo personal nunca he utilizado dos de los frameworks m&aacute;s populares [Bootstrap](http://getbootstrap.com/) y [Foundation](http://foundation.zurb.com/index.html). Esta desici&oacute;n esta basada principalmente en dos motivos:
-
-*   Sistema Grid utilizado para el layout de las paginas.
-*   Estilos predifinidos de los elementos.
-
-Si hablamos del sistema de Grid que por ejemplo Bootstrap maneja podriamos encontrar ejemplos como este:
+La respuesta rapida es no. Para los b&uacute;scadores el nombre de las clases no afecta en como tu sitio web es leido por un buscador. Por mucho tiempo he evitado utilizar Frameworks como Bootstrap devido a lo poco semantico que para mi resultan las clases CSS que se utilizan para generar el layout de un sitio web. Es comun encontrarse c&oacute;digo como este:
 
 ```
-<div class="bs-docs-grid">
-    <div class="row show-grid">
-      <div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
-      <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
-    </div>
-    <div class="row show-grid">
-      <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
-      <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
-      <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
-    </div>
-    <div class="row show-grid">
-      <div class="col-xs-6">.col-xs-6</div>
-      <div class="col-xs-6">.col-xs-6</div>
-    </div>
-  </div>
+<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-10 col-lg-offset-1">
 ```
+
+Para evitar ese problema y tener un c&oacute;digo m&aacute;s semantico y sencillo de entender utilizo [Bourbon](http://neat.bourbon.io/) el cual b&aacute;sicamente te permite generar CSS m&aacute;s semantico, ya que uno puede definir el nombre de una clase sencilla
