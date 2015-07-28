@@ -28,26 +28,14 @@ Para evitar ese problema y tener un c&oacute;digo m&aacute;s semantico y sencill
 
 Este es un ejemplo de un layout generado con Neat:
 
-```
-// HTML
-<section class"container">
-  <aside class="sidebar">What is it about?</aside>
-  <article class="main-content">Neat is an open source semantic grid framework built on top of Sass and Bourbon…</article>
-</section>
+<!--|%%|%7B%25%20highlight%20HTML%20linenos%25%7D|%%|--> // HTML
+<section><aside class="sidebar">What is it about?</aside><article class="main-content">Neat is an open source semantic grid framework built on top of Sass and Bourbon&hellip;</article></section>
 
-// CSS
-.container {
-  @include outer-container;
+// CSS .container { @include outer-container;
 
-  .sidebar { @include span-columns(6); }
-  .main-content { @include span-columns(6); }
+.sidebar { @include span-columns(6); } .main-content { @include span-columns(6); }
 
-  @include media(min-width: 768px) {
-    .sidebar { @include span-columns(3); }
-    .main-content { @include span-columns(9); }
-  }
-}
-```
+@include media(min-width: 768px) { .sidebar { @include span-columns(3); } .main-content { @include span-columns(9); } } } <!--|%%|%7B%25%20endhighlight%20%25%7D|%%|-->
 
 La [W3C](http://www.w3c.es/)(El Consorcio World Wide Web) recomienda como buena practica, [utilizar las clases teniendo en cuenta la semantica](http://www.w3.org/QA/Tips/goodclassnames). Si bien estamos generando contenido m&aacute;s facil de leer e interpretar, esta forma de utilizar las clases a los buscadores no les dicen nada.
 
@@ -55,22 +43,25 @@ Para poder escribir HTML m&aacute;s sem&aacute;ntico que le permita a los buscad
 
 ## Microformatos
 
-Como mencione al principio de esta entrada, los nombres de las clasess que escribimos en nuestro c&oacute;digo HTML no afectan en como un buscadador lee nuestro sitio web, sin embargo hay un exepci&oacute;n y esas son los Microformatos. Los microformatos son una serie de patrones que permiten estructurar el c&oacute;digo HTML el cual puede ser leido e interpretado por los buscadores. Todo esto a traves de clases CSS. Aqui podemos ver un ejemplo b&aacute;sico de un uso.
+Como mencione al principio de esta entrada, los nombres de las clasess que escribimos en nuestro c&oacute;digo HTML no afectan en como un buscadador lee nuestro sitio web, sin embargo hay un exepci&oacute;n y esas son los Microformatos. Los microformatos son una serie de patrones que permiten estructurar el c&oacute;digo HTML el cual puede ser leido e interpretado por los buscadores. Todo esto a traves de clases CSS. Aqui podemos ver un ejemplo b&aacute;sico de un uso. <!--|%%|%7B%25%20highlight%20HTML%20linenos%25%7D|%%|-->
+
+ 
+<div class="h-card">![photo of Mitchell](https://webfwd.org/content/about-experts/300.mitchellbaker/mentor_mbaker.jpg) &lt;a class=&quot;p-name u-url&quot; href=&quot;[http://blog.lizardwrangler.com/](http://blog.lizardwrangler.com/)&quot;</div>
+
+ 
 
 ```
-<div class="h-card">
-  ![photo of Mitchell](https://webfwd.org/content/about-experts/300.mitchellbaker/mentor_mbaker.jpg)
-  <a class="p-name u-url"
-     href="http://blog.lizardwrangler.com/" 
-    >Mitchell Baker</a>
- (<a class="u-url" 
-     href="https://twitter.com/MitchellBaker"
-    >@MitchellBaker</a>)
-  <span class="p-org">Mozilla Foundation</span>
-  <p class="p-note">
-    Mitchell is responsible for setting the direction and scope of the Mozilla Foundation and its activities.
-  </p>
-  <span class="p-category">Strategy</span>
-  <span class="p-category">Leadership</span>
-</div>
+>Mitchell Baker</a>
 ```
+
+(&lt;a class=&quot;u-url&quot; href=&quot;[https://twitter.com/MitchellBaker](https://twitter.com/MitchellBaker)&quot;
+
+```
+>@MitchellBaker</a>)
+```
+
+<span class="p-org">Mozilla Foundation</span>
+
+Mitchell is responsible for setting the direction and scope of the Mozilla Foundation and its activities.
+
+<span class="p-category">Strategy</span> <span class="p-category">Leadership</span>
