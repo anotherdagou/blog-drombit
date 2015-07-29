@@ -2,7 +2,7 @@ url: blog.drombit.com
 baseurl: /
 destination: ../../site
 name: Drombit Blog
-markdown: kramdown
+markdown: redcarpet
 highlighter: pygments
 kramdown:
     input: GFM
