@@ -20,7 +20,7 @@ A la pregunta de: **¿Afectan al SEO las clases CSS en el HTML?** En primera ins
 
 Por mucho tiempo, he evitado utilizar Frameworks como Bootstrap, debido a lo poco semántico que para mi resultan las clases CSS que se utilizan para generar el layout de un sitio web. En sitios construidos con Bootstrap es común encontrarse código como este:
 
-```html
+```
 <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-10 col-lg-offset-1">
 ```
 
