@@ -12,7 +12,7 @@ tags:
   - CSS
 ---
 
-Llevo escribiendo **CSS** por varios años, conforme uno va escribiendo CSS o cualquier otro lenguaje, uno empieza a interesarse en conocer las mejores practicas, que permitan que tu código sea más modular, más escalable, más fácil de leer, más semántico, etc.
+Llevo escribiendo **CSS** por varios años, conforme uno va escribiendo CSS o cualquier otro lenguaje, uno empieza a interesarse en conocer las mejores practicas que permitan que tu código sea más modular, más escalable, más fácil de leer, más semántico, etc.
 
 Si tu intención es desarrollar sitios web que permitan a los buscadores leer e interpretar el contenido de tu sitio, una de las mejores practicas es cuidar que el código HTML que generas sea semántico; utilizando  las diferentes herramientas que tenemos a la mano: **Etiquetas y propiedades de HTML5, Microformatos, Microdatos, RDFa, JSON-LD**.
 
