@@ -29,7 +29,7 @@ Para evitar este problema y tener un código más semántico y sencillo de enten
 Este es un ejemplo de un layout generado con Neat:
 
 {% highlight HTML linenos%}
-<section class"container">
+<section class="container">
   <aside class="sidebar">What is it about?</aside>
   <article class="main-content">Neat is an open source semantic grid framework built on top of Sass and Bourbon…</article>
 </section>
