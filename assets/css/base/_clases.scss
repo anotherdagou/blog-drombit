@@ -185,3 +185,9 @@ blockquote {
 		@include magic-font(22px,1.5);
 	}
 }
+
+.highlight {
+	@include magic-font(16px,1.2);
+	@include padding-left(6px);
+	@include padding-right(6px);
+}

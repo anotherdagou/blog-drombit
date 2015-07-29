@@ -5,13 +5,13 @@ body{
 	background: #fff;
 
 	@include media($desktop){
-		@include magic-font(16px,1.2);
+		@include magic-font(18px,1.3);
 		@include padding-all(0px);
 	}
 }
 
 a{ 
-	color: $brandColorLink;
+	color: darken($brandColorLink,25);
 	text-decoration:none;
 }
 

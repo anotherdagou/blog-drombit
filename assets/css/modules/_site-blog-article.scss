@@ -32,9 +32,11 @@
 	}
 
 	.article__related {
-		> ul {
-			list-style: none;
-		}
+		background: $brandColorGray;
+		@include padding-all(24px);
+		@include margin-bottom(24px);
+
+		& > h2 { text-transform: uppercase; }
 		
 		p { @include margin-top(12px); }
 		p:empty { display: none; }
