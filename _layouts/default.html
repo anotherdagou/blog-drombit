@@ -59,17 +59,28 @@
 		</footer>
         <!-- Facebook BTN -->
         <div id="fb-root"></div>
-        <script>(function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1&appId=355374614576579";
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="{{ site.baseurl }}assetjs/vendor/jquery-1.10.2.min.js"><\/script>')</script> 
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>     
-        <script src="{{ site.baseurl }}assets/js/main.js"></script>
+        <script src="{{ site.baseurl }}assets/js/min/main-ck.js"></script>
+        
+        <!-- Load External Scripts -->
+        <script type="text/javascript">
+            function downloadJSAtOnload() {
+                var element = document.createElement("script");
+                element.src = "{{ site.baseurl }}assets/js/min/defer-external-scripts-min.js";
+                document.body.appendChild(element);
+            }
+
+            if (window.addEventListener)
+                // load the function "downloadJSAtOnload" after the DOM is ready,
+                // the last parameter @false active the Event Bubling.
+                window.addEventListener("load", downloadJSAtOnload, false);
+                
+                // Fallback for IE 
+            else if (window.attachEvent)
+                window.attachEvent("onload", downloadJSAtOnload);
+            else window.onload = downloadJSAtOnload;
+        </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
