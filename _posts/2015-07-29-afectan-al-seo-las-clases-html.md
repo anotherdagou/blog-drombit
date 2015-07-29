@@ -50,7 +50,7 @@ Este es un ejemplo de un layout generado con Neat:
 {% endhighlight %}
 
 
-La [W3C](http://www.w3c.es/){:target="_blank"}(El Consorcio World Wide Web) recomienda como buena practica, [utilizar las clases teniendo en cuenta la semántica](http://www.w3.org/QA/Tips/goodclassnames). Si bien estamos generando contenido más fácil de leer e interpretar, esta forma de utilizar las clases, a los buscadores no les dicen nada.
+La [W3C](http://www.w3c.es/)(El Consorcio World Wide Web) recomienda como buena practica, [utilizar las clases teniendo en cuenta la semántica](http://www.w3.org/QA/Tips/goodclassnames). Si bien estamos generando contenido más fácil de leer e interpretar, esta forma de utilizar las clases, a los buscadores no les dicen nada.
 
 Para poder escribir HTML más semántico, que le permita a los buscadores conocer mejor la estructura y contenido de nuestro sitio, debemos de utilizar algunos estándares como los [Microformatos](http://microformats.org/) o [schema.org](http://schema.org/)(RDFa, Microdata y JSON-LD). Ambas iniciativas son compatibles con los buscadores más populares: Google, Yahoo y Bing.
 
@@ -94,4 +94,3 @@ Ambas propuestas merecen un articulo más detallado, pero sus alcances son muy i
 Los diferentes formatos propuestos por Schema.org igual son interesantes, sobre todo por que contienen más patrones que pueden ser utilizados para diferentes tipos de contenidos (conciertos, recetas, información de negocio, etc). El hecho de que Google lo ocupe con mayor interés es algo que para muchos resulta muy tentador. 
 
 Cualquiera que sea nuestra elección ayudara a generar un sitio web más amigable para los buscadores.
-
