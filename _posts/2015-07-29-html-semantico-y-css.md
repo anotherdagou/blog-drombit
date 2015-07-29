@@ -29,14 +29,13 @@ Para evitar este problema y tener un código más semántico y sencillo de enten
 Este es un ejemplo de un layout generado con Neat:
 
 {% highlight HTML linenos%}
-
-// HTML
 <section class"container">
   <aside class="sidebar">What is it about?</aside>
   <article class="main-content">Neat is an open source semantic grid framework built on top of Sass and Bourbon…</article>
 </section>
+{% endhighlight %} 
 
-// CSS
+{% highlight CSS linenos %}
 .container {
   @include outer-container;
 
@@ -48,8 +47,7 @@ Este es un ejemplo de un layout generado con Neat:
     .main-content { @include span-columns(9); }
   }
 }
-
-{% endhighlight %} 
+{% highlight %}
 
 
 La [W3C](http://www.w3c.es/)(El Consorcio World Wide Web) recomienda como buena practica, [utilizar las clases teniendo en cuenta la semántica](http://www.w3.org/QA/Tips/goodclassnames). Si bien estamos generando contenido más fácil de leer e interpretar, esta forma de utilizar las clases, a los buscadores no les dicen nada.
