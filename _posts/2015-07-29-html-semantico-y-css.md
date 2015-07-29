@@ -47,7 +47,7 @@ Este es un ejemplo de un layout generado con Neat:
     .main-content { @include span-columns(9); }
   }
 }
-{% highlight %}
+{% endhighlight %}
 
 
 La [W3C](http://www.w3c.es/)(El Consorcio World Wide Web) recomienda como buena practica, [utilizar las clases teniendo en cuenta la semántica](http://www.w3.org/QA/Tips/goodclassnames). Si bien estamos generando contenido más fácil de leer e interpretar, esta forma de utilizar las clases, a los buscadores no les dicen nada.
