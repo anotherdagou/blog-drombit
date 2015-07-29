@@ -14,7 +14,7 @@ tags:
 
 Llevo escribiendo **CSS** por varios años, conforme uno va escribiendo CSS o cualquier otro lenguaje, uno empieza a interesarse en conocer las mejores practicas, que permitan que tu código sea más modular, más escalable, más fácil de leer, más semántico, etc.
 
-Si tu intención es desarrollar sitios web que permitan a los buscadores leer e interpretar el contenido de tu sitio, una de las mejores practicas es cuidar que el código HTML que generas sea semántico; utilizando  las diferentes herramientas que tenemos a la mano: Etiquetas y propiedades de HTML5, Microformatos, Microdatos, RDFa, JSON-LD.
+Si tu intención es desarrollar sitios web que permitan a los buscadores leer e interpretar el contenido de tu sitio, una de las mejores practicas es cuidar que el código HTML que generas sea semántico; utilizando  las diferentes herramientas que tenemos a la mano: **Etiquetas y propiedades de HTML5, Microformatos, Microdatos, RDFa, JSON-LD**.
 
 A la pregunta de: **¿Afectan al SEO las clases CSS en el HTML?** En primera instancia la respuesta es no. Para los buscadores el nombre de las clases no afecta en como tu sitio web es leído e interpretado por un buscador.
 
