@@ -3,6 +3,8 @@ baseurl: /
 destination: ../../site
 name: Drombit Blog
 markdown: kramdown
+kramdown:
+    input: GFM
 highlighter: pygments
 exclude: ['Rakefile','config.codekit']
 paginate: 6
