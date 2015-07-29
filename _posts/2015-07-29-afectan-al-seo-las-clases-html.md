@@ -20,7 +20,7 @@ A la pregunta de: **¿Afectan al SEO las clases CSS en el HTML?** En primera ins
 
 Por mucho tiempo, he evitado utilizar Frameworks como Bootstrap, debido a lo poco semántico que para mi resultan las clases CSS que se utilizan para generar el layout de un sitio web. En sitios construidos con Bootstrap es común encontrarse código como este:
 
-```
+```html
 <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-10 col-lg-offset-1">
 ```
 
@@ -50,7 +50,7 @@ Este es un ejemplo de un layout generado con Neat:
 {% endhighlight %}
 
 
-La [W3C](http://www.w3c.es/)(El Consorcio World Wide Web) recomienda como buena practica, [utilizar las clases teniendo en cuenta la semántica](http://www.w3.org/QA/Tips/goodclassnames). Si bien estamos generando contenido más fácil de leer e interpretar, esta forma de utilizar las clases, a los buscadores no les dicen nada.
+La [W3C](http://www.w3c.es/){:target="_blank"}(El Consorcio World Wide Web) recomienda como buena practica, [utilizar las clases teniendo en cuenta la semántica](http://www.w3.org/QA/Tips/goodclassnames). Si bien estamos generando contenido más fácil de leer e interpretar, esta forma de utilizar las clases, a los buscadores no les dicen nada.
 
 Para poder escribir HTML más semántico, que le permita a los buscadores conocer mejor la estructura y contenido de nuestro sitio, debemos de utilizar algunos estándares como los [Microformatos](http://microformats.org/) o [schema.org](http://schema.org/)(RDFa, Microdata y JSON-LD). Ambas iniciativas son compatibles con los buscadores más populares: Google, Yahoo y Bing.
 
