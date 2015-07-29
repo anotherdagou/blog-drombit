@@ -4,11 +4,8 @@ destination: ../../site
 name: Drombit Blog
 markdown: kramdown
 highlighter: rouge
-    default_lang: html
 kramdown:
     input: GFM
-    enable_coderay: true
-
 exclude: ['Rakefile','config.codekit']
 paginate: 6
 paginate_path: "page:num"
