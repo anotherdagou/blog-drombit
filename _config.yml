@@ -5,6 +5,7 @@ name: Drombit Blog
 markdown: kramdown
 kramdown:
     input: GFM
+    enable_coderay: true
     coderay:
         coderay_wrap:              div
         coderay_line_numbers:      inline
