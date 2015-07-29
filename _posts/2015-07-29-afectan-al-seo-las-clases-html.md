@@ -24,7 +24,6 @@ Por mucho tiempo, he evitado utilizar Frameworks como Bootstrap, debido a lo poc
 <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-10 col-lg-offset-1">
 ```
 
-
 Para evitar este problema y tener un código más semántico y sencillo de entender utilizo [Neat](http://neat.bourbon.io/), el cual básicamente te permite usar menos clases de lado del HTML y manejar toda la lógica del layout en el propio CSS. Cabe destacar que al día de hoy Bootstrap o Foundation ya cuentan con esta característica.
 
 Este es un ejemplo de un layout generado con Neat:
