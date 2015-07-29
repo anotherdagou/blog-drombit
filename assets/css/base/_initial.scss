@@ -11,10 +11,14 @@ body{
 }
 
 a{ 
+	color: $brandColorLink;
+	text-decoration:none;
+}
+
+p a {
 	color: darken($brandColorLink,20);
 	text-decoration:underline;
 }
-
 
 
 ul{

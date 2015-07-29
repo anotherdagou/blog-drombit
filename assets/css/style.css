@@ -554,6 +554,10 @@ body {
       padding: 0rem; } }
 
 a {
+  color: #57C3C9;
+  text-decoration: none; }
+
+p a {
   color: #2d888d;
   text-decoration: underline; }
 
