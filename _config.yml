@@ -3,7 +3,6 @@ baseurl: /
 destination: ../../site
 name: Drombit Blog
 markdown: kramdown
-highlighter: rouge
 kramdown:
     input: GFM
 exclude: ['Rakefile','config.codekit']
