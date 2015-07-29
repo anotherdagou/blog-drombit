@@ -2,8 +2,10 @@ url: blog.drombit.com
 baseurl: /
 destination: ../../site
 name: Drombit Blog
-markdown: kramdown
+markdown: redcarpet
 highlighter: pygments
+redcarpet:
+    extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "highlight", "link_attributes"]
 kramdown:
     input: GFM
 exclude: ['Rakefile','config.codekit']
