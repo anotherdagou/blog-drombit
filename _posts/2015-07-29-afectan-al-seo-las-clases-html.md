@@ -94,4 +94,3 @@ Ambas propuestas merecen un articulo más detallado, pero sus alcances son muy i
 Los diferentes formatos propuestos por Schema.org igual son interesantes, sobre todo por que contienen más patrones que pueden ser utilizados para diferentes tipos de contenidos (conciertos, recetas, información de negocio, etc). El hecho de que Google lo ocupe con mayor interés es algo que para muchos resulta muy tentador. 
 
 Cualquiera que sea nuestra elección ayudara a generar un sitio web más amigable para los buscadores.
-
