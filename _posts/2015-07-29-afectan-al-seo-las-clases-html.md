@@ -20,14 +20,10 @@ A la pregunta de: **¿Afectan al SEO las clases CSS en el HTML?** En primera ins
 
 Por mucho tiempo, he evitado utilizar Frameworks como Bootstrap, debido a lo poco semántico que para mi resultan las clases CSS que se utilizan para generar el layout de un sitio web. En sitios construidos con Bootstrap es común encontrarse código como este:
 
-```html
+```
 <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-10 col-lg-offset-1">
 ```
-```ruby
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
-```
+
 
 Para evitar este problema y tener un código más semántico y sencillo de entender utilizo [Neat](http://neat.bourbon.io/), el cual básicamente te permite usar menos clases de lado del HTML y manejar toda la lógica del layout en el propio CSS. Cabe destacar que al día de hoy Bootstrap o Foundation ya cuentan con esta característica.
 
