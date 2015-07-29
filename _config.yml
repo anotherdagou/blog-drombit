@@ -2,9 +2,7 @@ url: blog.drombit.com
 baseurl: /
 destination: ../../site
 name: Drombit Blog
-markdown: redcarpet
-redcarpet:
- extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+markdown: kramdown
 highlighter: pygments
 exclude: ['Rakefile','config.codekit']
 paginate: 6
