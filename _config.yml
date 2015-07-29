@@ -4,7 +4,7 @@ destination: ../../site
 name: Drombit Blog
 markdown: redcarpet
 redcarpet:
- extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "highlight", "link_attributes"]
+ extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 highlighter: pygments
 exclude: ['Rakefile','config.codekit']
 paginate: 6
