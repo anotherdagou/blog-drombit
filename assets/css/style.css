@@ -554,8 +554,8 @@ body {
       padding: 0rem; } }
 
 a {
-  color: #277579;
-  text-decoration: none; }
+  color: #2d888d;
+  text-decoration: underline; }
 
 ul {
   list-style: initial; }
