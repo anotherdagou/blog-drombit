@@ -73,8 +73,8 @@ Los diferentes formatos propuestos por Schema.org igual son interesantes, sobre 
 
 Cualquiera que sea nuestra elecci&oacute;n ayudara a generar un sitio web m&aacute;s amigable para los buscadores.
 
-```html
+<!--|%%|%7B%25%20raw%20%25%7D|%%|-->
 
 &lt;div&gt;&lt;/div&gt;
 
-```
+<!--|%%|%7B%25%20endraw%25%7D|%%|-->
