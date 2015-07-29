@@ -4,6 +4,7 @@ destination: ../../site
 name: Drombit Blog
 markdown: kramdown
 highlighter: rouge
+    default_lang: html
 kramdown:
     input: GFM
     enable_coderay: true
