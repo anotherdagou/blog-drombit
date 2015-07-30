@@ -50,7 +50,7 @@ Este es un ejemplo de un layout generado con Neat:
 {% endhighlight %}
 
 
-La [W3C](http://www.w3c.es/)(El Consorcio World Wide Web) recomienda como buena practica, [utilizar las clases teniendo en cuenta la semántica](http://www.w3.org/QA/Tips/goodclassnames). Si bien estamos generando contenido más fácil de leer e interpretar, esta forma de utilizar las clases, a los buscadores no les dicen nada.
+La [W3C](http://www.w3c.es/)(El Consorcio World Wide Web) recomienda como buena practica, [utilizar las clases teniendo en cuenta la semántica](http://www.w3.org/QA/Tips/goodclassnames). Si bien estamos generando contenido más fácil de leer e interpretar esta forma de utilizar las clases, a los buscadores no les dicen nada.
 
 Para poder escribir HTML más semántico, que le permita a los buscadores conocer mejor la estructura y contenido de nuestro sitio, debemos de utilizar algunos estándares como los [Microformatos](http://microformats.org/) o [schema.org](http://schema.org/)(RDFa, Microdata y JSON-LD). Ambas iniciativas son compatibles con los buscadores más populares: Google, Yahoo y Bing.
 
@@ -74,7 +74,7 @@ Como mencione al principio de esta entrada, los nombres de las clases que escrib
 Los microformatos establecen una serie de clases que permiten darle contexto a la información que estamos generando. El ejemplo de arriba presenta la información de una persona. las clases: ``` h-card, p-name, u-url, p-category``` son clases que ayudan a los buscadores a entender la información que se genera. Las diferentes clases y características particulares de los Microformatos no serán tratados en esta entrada.
 
 ## Schema.org
-Al igual que los ;icroformatos, schema.org es una comunidad que busca generar estándares para compartir información la cual puede ser leída e interpretada por los buscadores, a diferencia de los ;icroformatos que utilizan las Clases CSS, schemas.org utiliza otros formatos como: RDFa, Microdata y JSON-LD. Un ejemplo parecido al ejemplo previamente escrito utilizando por ejemplo Microdata seria.
+Al igual que los Microformatos, schema.org es una comunidad que busca generar estándares para compartir información la cual puede ser leída e interpretada por los buscadores, a diferencia de los Microformatos que utilizan las Clases CSS, schemas.org utiliza otros formatos como: RDFa, Microdata y JSON-LD. Un ejemplo parecido al ejemplo previamente escrito utilizando por ejemplo Microdata seria.
 
 {% highlight HTML linenos%}
 
