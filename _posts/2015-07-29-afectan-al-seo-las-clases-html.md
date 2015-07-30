@@ -74,7 +74,7 @@ Como mencione al principio de esta entrada, los nombres de las clases que escrib
 Los microformatos establecen una serie de clases que permiten darle contexto a la información que estamos generando. El ejemplo de arriba presenta la información de una persona. las clases: ``` h-card, p-name, u-url, p-category``` son clases que ayudan a los buscadores a entender la información que se genera. Las diferentes clases y características particulares de los Microformatos no serán tratados en esta entrada.
 
 ## Schema.org
-Al igual que los ;icroformatos, schema.org es una comunidad que busca generar estándares para compartir información la cual puede ser leída e interpretada por los buscadores, a diferencia de los ;icroformatos que utilizan las Clases CSS, schemas.org utiliza otros formatos como: RDFa, Microdata y JSON-LD. Un ejemplo parecido al ejemplo previamente escrito utilizando por ejemplo Microdata seria.
+Al igual que los Microformatos, schema.org es una comunidad que busca generar estándares para compartir información la cual puede ser leída e interpretada por los buscadores, a diferencia de los ;icroformatos que utilizan las Clases CSS, schemas.org utiliza otros formatos como: RDFa, Microdata y JSON-LD. Un ejemplo parecido al ejemplo previamente escrito utilizando por ejemplo Microdata seria.
 
 {% highlight HTML linenos%}
 
