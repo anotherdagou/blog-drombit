@@ -7,7 +7,8 @@
 .site-blog__article {
 	@include margin-bottom(24px);
 }
-	.article__title {
+	.article__title,
+	.article__title h1 {
 		margin-bottom: 0;
 		color: $brandColor;
 		&:hover { color: $brandColorComplement; }	
