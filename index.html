@@ -10,7 +10,7 @@ description: Blog de Drombit
 						<span class="article-author">
 							{% for member in site.data.members %}{% if member.name contains post.author %}<a href="http://www.twitter.com/{{member.twitter}}">{{member.name}}</a>{% endif%}{% endfor %}
 						</span>
-						<span> - <time class="article-date" pubdate datetime="{{ post.date | date_to_string }}">{{ post.date | date_to_string }}</time></span>
+						<span> - <time class="article-date" datetime="{{ post.date | date_to_string }}">{{ post.date | date_to_string }}</time></span>
 					</span>
                     <div class="article__excerpt">{{ post.excerpt }}</div>
                     <a href="{{ post.url }}" class="article__readmore"> Continuar Leyendo</a>
