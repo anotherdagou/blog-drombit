@@ -7,12 +7,10 @@
 .site-blog__article {
 	@include margin-bottom(24px);
 }
-	.article__title{
-		> h1 {
-			margin-bottom: 0;
-			color: $brandColor;
-			&:hover { color: $brandColorComplement; }
-		}
+	.article__title {
+		margin-bottom: 0;
+		color: $brandColor;
+		&:hover { color: $brandColorComplement; }	
 	}
 
 	.article__date-author {
