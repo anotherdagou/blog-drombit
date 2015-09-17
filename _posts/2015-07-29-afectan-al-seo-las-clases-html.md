@@ -9,7 +9,7 @@ categories:
   - desarrollo
 tags:
   - HTML
-  - CSS
+  - CSS 
 ---
 
 Llevo escribiendo **CSS** por varios años, conforme uno va escribiendo CSS o cualquier otro lenguaje, uno empieza a interesarse en conocer las mejores practicas que permitan que tu código sea más modular, más escalable, más fácil de leer, más semántico, etc.
