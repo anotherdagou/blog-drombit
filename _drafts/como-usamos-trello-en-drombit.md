@@ -7,6 +7,7 @@ date: 2015-10-22T17:52:00.000Z
 comments: true
 categories:
   - desarrollo
+  - opinion
 ---
 
 Si has trabajado en el&nbsp;desarrollo de software en proyectos medianamente grandes, reconocer&aacute;s la importancia de encontrar la o las herramientas id&oacute;neas para ayudarte a tener una mejor organizaci&oacute;n en&nbsp;un proyecto.
