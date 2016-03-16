@@ -1,7 +1,7 @@
 ---
 comments: "true"
 layout: post
-published: false
+published: true
 description: Este es un post de prueba
 author: Diego
 date: "2016-03-16 11:22 -0500"
@@ -10,6 +10,7 @@ tags:
   - css
 title: Mi titulo de post de prueba
 ---
+
 
 
 
@@ -25,3 +26,7 @@ Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the 
 {% endhighlight %} 
 
 ![alberto.jpg]({{site.baseurl}}/uploads/alberto.jpg)
+´´´html
+<div>
+´´´
+
