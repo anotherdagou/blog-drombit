@@ -11,7 +11,7 @@ paginate: 6
 paginate_path: "page:num"
 prose:
   rooturl: '_posts'
-  siteurl: 'http://blog.drombit.com/'
+  siteurl: 'http://blog.drombit.com'
   media: 'uploads'
   ignore: ['_layouts', '_includes']
   metadata:
