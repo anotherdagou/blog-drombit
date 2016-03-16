@@ -1,6 +1,16 @@
 ---
-published: false
+comments: "true"
+layout: post
+published: true
+description: Este es un post de prueba
+author: Diego
+date: "2016-03-16 11:22 -0500"
+categories: desarrollo
+tags: 
+  - css
+title: Mi titulo de post de prueba
 ---
+
 
 
 ## A New Post
@@ -14,4 +24,4 @@ Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the 
 </section>
 {% endhighlight %} 
 
-![Captura de pantalla 2016-03-15 a las 10.09.08 p.m..png]({{site.baseurl}}/_drafts/Captura de pantalla 2016-03-15 a las 10.09.08 p.m..png)
+![alberto.jpg]({{site.baseurl}}/uploads/alberto.jpg)
