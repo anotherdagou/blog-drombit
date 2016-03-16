@@ -42,7 +42,7 @@ prose:
       - name: 'date'
         field: 
           name: 'text'
-          value: CURRENT_DATETIME
+          value: 'CURRENT_DATETIME'
       - name: 'comments'
         field: 
           element: 'hidden'
