@@ -1,6 +1,7 @@
 ---
-published: false
+published: true
 ---
+
 
 ## A New Post
 
@@ -14,4 +15,3 @@ Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the 
 {% endhighlight %} 
 
 ![Captura de pantalla 2016-03-15 a las 10.09.08 p.m..png]({{site.baseurl}}/_drafts/Captura de pantalla 2016-03-15 a las 10.09.08 p.m..png)
-
