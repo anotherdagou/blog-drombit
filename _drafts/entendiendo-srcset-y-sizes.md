@@ -10,8 +10,3 @@ categories:
 ---
 
 
-&nbsp;
-
-&nbsp;
-
-![demo](/uploads/versions/alberto---x----160-160x---.jpg)
