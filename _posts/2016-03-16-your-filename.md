@@ -1,7 +1,7 @@
 ---
 comments: "true"
 layout: post
-published: true
+published: false
 description: Este es un post de prueba
 author: Diego
 date: "2016-03-16 11:22 -0500"
@@ -10,6 +10,7 @@ tags:
   - css
 title: Mi titulo de post de prueba
 ---
+
 
 
 
