@@ -42,11 +42,12 @@ prose:
       - name: 'date'
         field: 
           element: 'text'
+          label: 'Fecha'
           value: 'CURRENT_DATETIME'
       - name: 'comments'
         field: 
           element: 'hidden'
-          value: true
+          value: "true"
       - name: 'categories'
         field:
           element: 'select'
@@ -58,6 +59,20 @@ prose:
               value: 'desarrollo'
             - name: 'Opinión'
               value: 'opinion'
+      - name: 'tags'
+        field:
+          element: 'multiselect'
+          label: 'Añadir Tags'
+          alterable: true
+          options:
+            - name: 'Jekyll'
+              value: 'jekyll'
+            - name: 'PHP'
+              value: 'php'
+            - name: 'CSS'
+              value: 'css'
+            - name: 'HTML'
+              value: 'html'
 
 
 
