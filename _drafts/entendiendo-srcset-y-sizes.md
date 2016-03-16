@@ -14,4 +14,4 @@ categories:
 
 &nbsp;
 
-&nbsp;
+![](/uploads/versions/alberto---x----160-160x---.jpg)
