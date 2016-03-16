@@ -25,8 +25,7 @@ prose:
         field:
           element: 'text'
           label: 'Titulo'
-          value: ''
-
+          value: 'Titulo'
       - name: 'description'
         field:
             element: 'textarea'
@@ -35,6 +34,22 @@ prose:
         field:
           element: 'select'
           label: 'Autor'
+          options:
+            - name: 'Diego'
+              value: 'Diego'
+            - name: 'Alberto'
+              value: 'Alberto'
+      - name: 'date'
+        field: 'text'
+        value: CURRENT_DATETIME
+      - name: 'comments'
+        field: 
+          element: 'hidden'
+          value: true
+      - name: 'categories'
+        field:
+          element: 'select'
+          label: 'Categorías'
           options:
             - name: 'Diseño'
               value: 'diseno'
