@@ -40,8 +40,9 @@ prose:
             - name: 'Alberto'
               value: 'Alberto'
       - name: 'date'
-        field: 'text'
-        value: CURRENT_DATETIME
+        field: 
+          name: 'text'
+          value: CURRENT_DATETIME
       - name: 'comments'
         field: 
           element: 'hidden'
