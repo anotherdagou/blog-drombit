@@ -10,3 +10,6 @@ exclude: ['Rakefile','config.codekit']
 include: ['.htaccess']
 paginate: 6
 paginate_path: "page:num"
+prose:
+	rooturl: '_posts'
+	siteurl: 'http://blog.drombit.com'
