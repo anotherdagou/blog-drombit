@@ -25,9 +25,8 @@ Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the 
 </section>
 {% endhighlight %} 
 
-![alberto.jpg]({{site.baseurl}}/uploads/alberto.jpg)
-
-´´´html
-	<div>
-´´´
+```javascript
+	var s = "JavaScript syntax highlighting";
+	alert(s);
+```
 
