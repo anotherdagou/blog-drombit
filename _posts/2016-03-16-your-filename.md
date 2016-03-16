@@ -25,7 +25,7 @@ Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the 
 </section>
 {% endhighlight %} 
 
-```html-lineos
+```html
 <img
         src = "http://placehold.it/400x250"
         alt = "srcset images"
