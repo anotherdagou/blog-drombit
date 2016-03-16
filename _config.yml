@@ -1,4 +1,5 @@
 url: blog.drombit.com
+baseurl: .site/
 destination: ../../site
 name: Drombit Blog
 markdown: redcarpet
