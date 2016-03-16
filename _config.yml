@@ -41,7 +41,7 @@ prose:
               value: 'Alberto'
       - name: 'date'
         field: 
-          name: 'text'
+          element: 'text'
           value: 'CURRENT_DATETIME'
       - name: 'comments'
         field: 
