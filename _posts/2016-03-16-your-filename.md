@@ -27,9 +27,9 @@ Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the 
 
 ```html
 <img
-        src = "http://placehold.it/400x250"
-        alt = "srcset images"
-        srcset = "http://placehold.it/400x250 1x,
-                  http://placehold.it/800x250 2x"
+	src = "http://placehold.it/400x250"
+    alt = "srcset images"
+    srcset = "http://placehold.it/400x250 1x,
+    		  http://placehold.it/800x250 2x"
 >
 ```
