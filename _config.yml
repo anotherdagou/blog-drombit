@@ -17,7 +17,32 @@ prose:
   ignore: ['_layouts', '_includes']
   metadata:
     _posts:
-      - name: "layout"
+      - name: 'layout'
         field:
-          element: "text"
-          value: "blog"
+          element: 'hidden'
+          value: 'post'
+      - name: 'title'
+        field:
+          element: 'text'
+          label: 'Titulo'
+          value: ''
+
+      - name: 'description'
+        field:
+            element: 'textarea'
+            label: 'Descripción'
+      - name: 'author'
+        field:
+          element: 'select'
+          label: 'Autor'
+          options:
+            - name: 'Diseño'
+              value: 'diseno'
+            - name: 'Desarrollo'
+              value: 'desarrollo'
+            - name: 'Opinión'
+              value: 'opinion'
+
+
+
+
