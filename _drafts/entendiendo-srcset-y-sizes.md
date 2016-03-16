@@ -10,18 +10,7 @@ categories:
 ---
 
 
-{% highlight HTML linenos%}
-&lt;section class="container"&gt;
-&nbsp; &lt;aside class="sidebar"&gt;What is it about?&lt;/aside&gt;
-&nbsp; &lt;article class="main-content"&gt;Neat is an open source semantic grid framework built on top of Sass and Bourbon…&lt;/article&gt;
-&lt;/section&gt;
-{% endhighlight %}&nbsp;
-
-'''html
-
-&lt;html&gt;
-
-'''
+&nbsp;
 
 &nbsp;
 
