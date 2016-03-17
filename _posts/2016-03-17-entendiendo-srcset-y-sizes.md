@@ -8,9 +8,10 @@ tags:
   - html
   - Responsive Design
   - Diseño Responsivo
-published: true
+published: false
 title: Entendiendo SRCSET y SIZES
 ---
+
 
 Hoy en día los contenidos en la web son consumidos en diferentes dispositivos, afortunadamente diferentes corrientes (Responsive Web Design, Mobile First, Adaptative Design, por mencionar algunos) han permitido diseñar sitios y aplicaciones web que puedan vivir en diferentes pantallas.
 
