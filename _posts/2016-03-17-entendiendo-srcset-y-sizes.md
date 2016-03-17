@@ -13,7 +13,6 @@ published: false
 title: Entendiendo SRCSET y SIZES
 ---
 
-
 Hoy en día los contenidos en la web son consumidos en diferentes dispositivos, afortunadamente diferentes corrientes (Responsive Web Design, Mobile First, Adaptative Design, por mencionar algunos) han permitido diseñar sitios y aplicaciones web que puedan vivir en diferentes pantallas.
 
 Uno de los recursos más importantes en la web son las imágenes. La técnica más utilizada para asegurarnos de que las imágenes se adapten a diferentes pantallas es definir la propiedad `max-width: 100%` a la etiqueta `img`.
