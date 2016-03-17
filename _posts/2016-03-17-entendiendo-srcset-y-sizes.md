@@ -9,7 +9,7 @@ tags:
   - html
   - Responsive Design
   - Diseño Responsivo
-published: true
+published: false
 title: Entendiendo SRCSET y SIZES
 ---
 
