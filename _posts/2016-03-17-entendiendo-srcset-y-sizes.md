@@ -9,7 +9,7 @@ tags:
   - html
   - Responsive Design
   - Diseño Responsivo
-published: false
+published: true
 title: Entendiendo SRCSET y SIZES
 ---
 
@@ -37,3 +37,18 @@ En el atributo srcset se define una serie de imágenes que el navegador tendrá 
 - Por tamaño de imagen.
 
 Cuando añadimos el atributo srcset, los navegadores que soporten este atributo tomarán como base la serie de imágenes definidas, en caso de que el navegador no soporten este atributo, tomará como base el atributo **src**.
+
+### srcset + densidad de pixeles
+
+En esta configuración le indicamos al navegador una serie de imágenes las cuales tienen un identificador que determina para que densidad de pixeles debe de mostrarse la imagen, este identificador  se determina indicando: **numero positivo seguido de la letra X**.
+
+```html
+<img
+	src = "http://placehold.it/400x250"
+	alt = "srcset images"
+	srcset = "http://placehold.it/400x250 1x,
+			 http://placehold.it/800x250 2x"
+>
+```
+
+pser
