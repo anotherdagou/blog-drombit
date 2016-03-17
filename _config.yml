@@ -43,10 +43,6 @@ prose:
           element: 'text'
           label: 'Fecha'
           value: 'CURRENT_DATETIME'
-      - name: 'comments'
-        field: 
-          element: 'hidden'
-          value: "true"
       - name: 'categories'
         field:
           element: 'select'
