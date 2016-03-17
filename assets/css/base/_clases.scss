@@ -122,17 +122,17 @@ Clases que funcionan como utilidades, pueden ser utilizadas en cualquier modulo 
 /* 
  * Styles for tables
  */
-.table{
+.table, 
+table{
 	width: 100%;
-	border: 1px solid #f0f0f0;
 
 	thead{
-		background:darken(#f0f0f0,20);
 		text-align: left;
+		border-bottom: 2px solid shade(#fff,25);	
 	}
 
 	tr{ 
-		border-bottom: 1px solid darken(#f0f0f0,5);	
+		border-bottom: 1px solid shade(#fff,25);	
 		th,td{
 			@include padding-two-values(6px,12px);
 		}

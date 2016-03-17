@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "19051",
+"creatorBuild": "19115",
 "files": {
 	"\/404.html": {
 		"fileType": 8192,
@@ -23,6 +23,48 @@
 		"inputAbbreviatedPath": "\/_posts\/2015-07-29-afectan-al-seo-las-clases-html.md",
 		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/_posts\/2015-07-29-afectan-al-seo-las-clases-html.html",
+		"outputFormat": 0,
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
+		},
+	"\/_posts\/2015-10-23-como-usamos-trello-en-drombit.md": {
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_posts\/2015-10-23-como-usamos-trello-en-drombit.md",
+		"maskEmailAddresses": 1,
+		"outputAbbreviatedPath": "\/_posts\/2015-10-23-como-usamos-trello-en-drombit.html",
+		"outputFormat": 0,
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
+		},
+	"\/_posts\/2016-03-17-entendiendo-srcset-y-sizes.md": {
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_posts\/2016-03-17-entendiendo-srcset-y-sizes.md",
+		"maskEmailAddresses": 1,
+		"outputAbbreviatedPath": "\/_posts\/2016-03-17-entendiendo-srcset-y-sizes.html",
 		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -510,6 +552,160 @@
 		"processHTML": 0,
 		"randomFootnoteNumbers": 0,
 		"useCompatibilityMode": 0
+		},
+	"\/uploads\/alberto.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5708,
+		"inputAbbreviatedPath": "\/uploads\/alberto.jpg",
+		"outputAbbreviatedPath": "\/uploads\/alberto.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/uploads\/captura-de-pantalla-2015-10-22-a-las-6.29.51-p.m..png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 555614,
+		"inputAbbreviatedPath": "\/uploads\/captura-de-pantalla-2015-10-22-a-las-6.29.51-p.m..png",
+		"outputAbbreviatedPath": "\/uploads\/captura-de-pantalla-2015-10-22-a-las-6.29.51-p.m..png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/uploads\/captura-de-pantalla-2015-10-23-a-las-9.55.23-a.m..png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 155497,
+		"inputAbbreviatedPath": "\/uploads\/captura-de-pantalla-2015-10-23-a-las-9.55.23-a.m..png",
+		"outputAbbreviatedPath": "\/uploads\/captura-de-pantalla-2015-10-23-a-las-9.55.23-a.m..png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/uploads\/max-width-img.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19576,
+		"inputAbbreviatedPath": "\/uploads\/max-width-img.png",
+		"outputAbbreviatedPath": "\/uploads\/max-width-img.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/uploads\/srcset+densidad+de+pixeles-2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 52094,
+		"inputAbbreviatedPath": "\/uploads\/srcset+densidad+de+pixeles-2x.png",
+		"outputAbbreviatedPath": "\/uploads\/srcset+densidad+de+pixeles-2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/uploads\/srcset+densidad+de+pixeles.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 54167,
+		"inputAbbreviatedPath": "\/uploads\/srcset+densidad+de+pixeles.png",
+		"outputAbbreviatedPath": "\/uploads\/srcset+densidad+de+pixeles.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/uploads\/srcset-nokia.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 25145,
+		"inputAbbreviatedPath": "\/uploads\/srcset-nokia.png",
+		"outputAbbreviatedPath": "\/uploads\/srcset-nokia.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/uploads\/srcset-sizes-2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 50493,
+		"inputAbbreviatedPath": "\/uploads\/srcset-sizes-2x.png",
+		"outputAbbreviatedPath": "\/uploads\/srcset-sizes-2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/uploads\/srcset-sizes-iphone.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 51993,
+		"inputAbbreviatedPath": "\/uploads\/srcset-sizes-iphone.png",
+		"outputAbbreviatedPath": "\/uploads\/srcset-sizes-iphone.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/uploads\/srcset-sizes.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 54261,
+		"inputAbbreviatedPath": "\/uploads\/srcset-sizes.png",
+		"outputAbbreviatedPath": "\/uploads\/srcset-sizes.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/uploads\/srcset-w.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 17069,
+		"inputAbbreviatedPath": "\/uploads\/srcset-w.png",
+		"outputAbbreviatedPath": "\/uploads\/srcset-w.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/uploads\/versions\/alberto---x----160-160x---.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5508,
+		"inputAbbreviatedPath": "\/uploads\/versions\/alberto---x----160-160x---.jpg",
+		"outputAbbreviatedPath": "\/uploads\/versions\/alberto---x----160-160x---.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/uploads\/versions\/captura-de-pantalla-2015-10-22-a-las-6.29.51-p.m.---x----1686-950x---.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 595147,
+		"inputAbbreviatedPath": "\/uploads\/versions\/captura-de-pantalla-2015-10-22-a-las-6.29.51-p.m.---x----1686-950x---.png",
+		"outputAbbreviatedPath": "\/uploads\/versions\/captura-de-pantalla-2015-10-22-a-las-6.29.51-p.m.---x----1686-950x---.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/uploads\/versions\/captura-de-pantalla-2015-10-23-a-las-9.55.23-a.m.---x----956-710x---.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 143554,
+		"inputAbbreviatedPath": "\/uploads\/versions\/captura-de-pantalla-2015-10-23-a-las-9.55.23-a.m.---x----956-710x---.png",
+		"outputAbbreviatedPath": "\/uploads\/versions\/captura-de-pantalla-2015-10-23-a-las-9.55.23-a.m.---x----956-710x---.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		}
 	},
 "hooks": [
@@ -614,8 +810,16 @@
 			"active": 0,
 			"flagValue": -1
 			},
+		"no_nested_string_interpolation": {
+			"active": 1,
+			"flagValue": -1
+			},
 		"no_plusplus": {
 			"active": 0,
+			"flagValue": -1
+			},
+		"no_private_function_fat_arrows": {
+			"active": 1,
 			"flagValue": -1
 			},
 		"no_stand_alone_at": {
@@ -624,6 +828,10 @@
 			},
 		"no_tabs": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"no_this": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"no_throwing_strings": {
@@ -1140,7 +1348,9 @@
 	"typescriptAutoOutputPathStyle": 2,
 	"typescriptCreateDeclarationFile": 0,
 	"typescriptCreateSourceMap": 0,
+	"typescriptJSXMode": 0,
 	"typescriptMinifyOutput": 0,
+	"typescriptModuleResolutionType": 0,
 	"typescriptModuleType": 0,
 	"typescriptNoImplicitAny": 0,
 	"typescriptPreserveConstEnums": 0,

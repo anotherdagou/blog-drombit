@@ -1,7 +1,6 @@
 ---
 layout: post
-comments: "true"
-description: Entendiendo como funciona srcset y sizes para el uso de imagenes en el diseño responsivo
+description: Entendiendo como funciona srcset y sizes para el uso de imágenes en el diseño responsivo
 author: Diego
 date: "2016-03-17 16:14 -0500"
 categories: diseno
@@ -9,7 +8,7 @@ tags:
   - html
   - Responsive Design
   - Diseño Responsivo
-published: false
+published: true
 title: Entendiendo SRCSET y SIZES
 ---
 
