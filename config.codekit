@@ -619,6 +619,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/uploads\/srcset-compatibility.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 58916,
+		"inputAbbreviatedPath": "\/uploads\/srcset-compatibility.png",
+		"outputAbbreviatedPath": "\/uploads\/srcset-compatibility.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/uploads\/srcset-nokia.png": {
 		"fileType": 32768,
 		"ignore": 0,

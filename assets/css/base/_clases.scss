@@ -193,3 +193,8 @@ blockquote {
 	@include padding-left(6px);
 	@include padding-right(6px);
 }
+
+p code {
+	background: gainsboro;
+    padding: 0px 3px;
+}
