@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "Primeros pasos con Jekyll"
+title: Primeros pasos con Jekyll
 description: Conociendo como funciona Jekyll
 author: Diego
-date: 2014-04-14 17:05:20
+date: "Mon Apr 14 2014 12:05:20 GMT-0500 (COT)"
 comments: true
-# Categories[diseno o desarrollo u opinion ]
-categories:
-  - desarrollo
-tags:
+categories: desarrollo
+tags: 
   - Jekyll
+published: true
 ---
+
 
 **Jekyll** es un generador de sitios estáticos construido en **Ruby**. Los generadores de sitios estáticos pueden ser utilizados para diferentes propósitos (portafolios, sitios de empresa, blogs, etc.). Una característica de este tipo de sistemas es la ausencia de bases de datos y sistemas complejos; Hablamos de sitios puros y duros en HTML. Como bien se podrán imaginar si queremos construir un blog con puro HTML, esto de entrada sonaría un poco descabellado, Pero, los generadores de sitios estáticos como Jekyll se encargan de hacer el trabajo pesado.
 
@@ -54,7 +54,7 @@ Se descargaran los paquetes pertinentes y podemos empezar a utilizar Jekyll. Nos
 
 Si todo sale bien se generara nuestro sitio y lo podremos ver funcionando entrando a la siguiente URL http://0.0.0.0:4000/
 
-![Jekyll Home]({{site.baseurl}}assets/img/jekyll-inicio.png)
+![Jekyll Home]({{site.baseurl}}/assets/img/jekyll-inicio.png)
 
 Si entramos al directorio de nuestro proyecto podremos ver la siguiente estructura de archivos.
 
@@ -99,7 +99,7 @@ title: Your New Jekyll Site
 
 Cuando ejecutamos el comando en consola **jekyll serve** . El archivo **index.html** manda a llamar un Layout llamado **default** este archivo se encuentra dentro de la carpeta **_layouts**. Posteriormente se define un titulo para nuestra pagina index.html el cual es pasado hacia el layout que mandamos a llamar. Posteriormente encontramos una siglo **for** que recorre el directorio **_posts** si encuentra archivos dentro, carga los datos pertinentes, en este caso la fecha de la entrada y el titulo de la misma.
 
-![Jekyll Home]({{site.baseurl}}assets/img/jekyll-inicio.png)
+![Jekyll Home]({{site.baseurl}}/assets/img/jekyll-inicio.png)
 
 En siguientes entradas profundizaremos más en Jekyll, y veremos como utilizar variables con YAML, construir Layouts con Liquid y escribir el contenido con Markdown.
 
