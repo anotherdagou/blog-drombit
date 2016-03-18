@@ -140,6 +140,8 @@ table{
 
 	@include media($mobile){
 		@include magic-font(12px,1);
+		display: block;
+		overflow: scroll;
 	}
 }
 
