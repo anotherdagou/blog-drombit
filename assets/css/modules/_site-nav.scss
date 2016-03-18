@@ -10,7 +10,7 @@
 
 	.site-nav__logo {
 		color: #fff;
-		font-size: 35px;  
+		font-size: 34px;  
 		font-weight: 500;
 		line-height: 1.2;
 		float: left;
@@ -23,6 +23,10 @@
 			right: -10px;
 			color: $brandColorComplement;
 			@include animation(blink 1s ease-in infinite alternate);
+		}
+
+		@include media($tablet) {
+			font-size: 36px;
 		}
 	}
 	
