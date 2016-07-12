@@ -3,7 +3,7 @@ layout: post
 author: Diego
 date: '2016-07-05 17:13 -0500'
 categories: desarrollo
-published: true
+published: false
 title: Optimizando nuestro sitio web
 description: Pensamientos sobre la ultima actualización de nuestro sitio web.
 tags:
