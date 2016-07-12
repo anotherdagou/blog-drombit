@@ -70,7 +70,7 @@ Veamos un ejemplo en el cual vamos a crear un componente que representa una list
 
 Nuestro componente inicial esta compuesta de dos partes: nuestro bloque lista y los elementos de nuestra lista. 
 
-```HTML
+```html
 <ul class="list">
     <li class="list__item">Item</li>
     <li class="list__item">Item</li>
@@ -80,7 +80,7 @@ Nuestro componente inicial esta compuesta de dos partes: nuestro bloque lista y 
 </ul>
 ```
 
-```CSS
+```css
 // Bloque 
 .list { list-style-type: square;}
 
@@ -93,7 +93,7 @@ Nuestro componente inicial esta compuesta de dos partes: nuestro bloque lista y 
 ### Lista Simple
 Para nuestro siguiente componente necesitamos que desaparezcan los iconos de la lista, adicionalmente vamos a eliminar el padding que por defecto nuestro componente tiene. Para esto vamos a necesitar crear un modificador de nuestro bloque principal. al cual llamaremos `list--reset`
 
-```HTML
+```html
 <ul class="list list--reset">
 	<li class="list__item">Item</li>
     <li class="list__item">Item</li>
@@ -103,7 +103,7 @@ Para nuestro siguiente componente necesitamos que desaparezcan los iconos de la 
 </ul>
 ```
 
-```CSS
+```css
 /* Bloque */ 
 .list { list-style-type: square; }
 
@@ -121,7 +121,7 @@ Para nuestro siguiente componente necesitamos que desaparezcan los iconos de la 
 ### Lista con bordes
 Para nuestra siguiente componente, vamos a darle un estilo de tal manera que los elementos de nuestra lista tengan un borde en la parte inferior. Para ello vamos a crear un modificador del elemento de nuestro bloque. Al cual llamaremos `list__item--underline`
 
-```
+```html
 <ul class="list list--reset">
   <li class="list__item list__item--underline">Item</li>
   <li class="list__item list__item--underline">Item</li>
@@ -131,7 +131,7 @@ Para nuestra siguiente componente, vamos a darle un estilo de tal manera que los
 </ul>
 ```	
 
-```CSS
+```css
 /* Bloque */ 
 .list { list-style-type: square; }
 
