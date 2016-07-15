@@ -2,7 +2,7 @@
 layout: post
 author: Diego
 date: '2016-07-14 22:33 -0500'
-categories: diseno
+categories: desarrollo
 published: false
 title: BEM - Mejorando la forma en la que escribimos CSS
 description: Como escribir código CSS modular y escalable utilizando BEM
