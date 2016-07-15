@@ -12,7 +12,7 @@ tags:
 ---
 Imagina que tienes que construir una pila de tazas de porcelana. La primera taza es sencilla, sin embargo, conforme vas apilando las tazas descubres la inestabilidad de la estructura. Te das cuenta de que con cada taza que añades la probabilidad de que esta colapse aumenta. Esto mismo sucede cuando escribimos mal código CSS. Seas experto o novato en el tema, no estas libre de escribir estructuras poco solidas de código CSS. 
 
-![CSS]({{site.baseurl}}/uploads/stacked-espresso-cups.jpg)
+![CSS ]({{site.baseurl}}/uploads/stacked-espresso-cups.jpg)
 
 Por suerte existen diferentes metodologías que nos permiten crear CSS modular, escalable, reutilizable y más sencillo de mantener. Algunas de las más populares son:
 
