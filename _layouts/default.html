@@ -20,7 +20,7 @@
         <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link href="/favicon.ico" rel="icon" type="image/x-icon">
+        <link href="favicon.ico" rel="icon" type="image/x-icon">
         <link rel="stylesheet" href="/assets/css/style.css">
         <link rel="stylesheet" href="/assets/css/pygments.css">
         <script src="/assets/js/vendor/modernizr-2.6.2.min.js"></script>
@@ -58,30 +58,9 @@
                 <a href="http://www.drombit.com" class="btn btn--ghost">Visita Nuestro Portafolio</a>
             </div>
 		</footer>
-        <!-- Facebook BTN -->
-        <div id="fb-root"></div>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="/assetjs/vendor/jquery-1.10.2.min.js"><\/script>')</script> 
         <script src="/assets/js/min/main-ck.js"></script>
-        
-        <!-- Load External Scripts -->
-        <script type="text/javascript">
-            function downloadJSAtOnload() {
-                var element = document.createElement("script");
-                element.src = "/assets/js/min/defer-external-scripts-min.js";
-                document.body.appendChild(element);
-            }
-
-            if (window.addEventListener)
-                // load the function "downloadJSAtOnload" after the DOM is ready,
-                // the last parameter @false active the Event Bubling.
-                window.addEventListener("load", downloadJSAtOnload, false);
-                
-                // Fallback for IE 
-            else if (window.attachEvent)
-                window.attachEvent("onload", downloadJSAtOnload);
-            else window.onload = downloadJSAtOnload;
-        </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

@@ -51,3 +51,22 @@ comments: true
 	
 	</div>
 </article>
+
+<!-- Load External Scripts -->
+<script type="text/javascript">
+    function downloadJSAtOnload() {
+        var element = document.createElement("script");
+        element.src = "/assets/js/min/defer-external-scripts-min.js";
+        document.body.appendChild(element);
+    }
+
+    if (window.addEventListener)
+        // load the function "downloadJSAtOnload" after the DOM is ready,
+        // the last parameter @false active the Event Bubling.
+        window.addEventListener("load", downloadJSAtOnload, false);
+        
+        // Fallback for IE 
+    else if (window.attachEvent)
+        window.attachEvent("onload", downloadJSAtOnload);
+    else window.onload = downloadJSAtOnload;
+</script>
