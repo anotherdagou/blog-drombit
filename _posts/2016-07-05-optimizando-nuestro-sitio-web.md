@@ -5,7 +5,7 @@ date: '2016-07-05 17:13 -0500'
 categories: desarrollo
 published: false
 title: BEM - Escribiendo mejor código CSS
-description: Pensamientos sobre la ultima actualización de nuestro sitio web.
+description: Como escribir código CSS modular y escalable utilizando BEM
 tags:
   - css
   - html
