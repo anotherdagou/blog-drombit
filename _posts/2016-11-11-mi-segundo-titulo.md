@@ -2,12 +2,13 @@
 layout: post
 author: Diego
 date: '2016-11-11 18:52 -0500'
-categories: diseno
-published: false
+categories: opinion
+published: true
 title: Mi segundo titulo
 description: Escribiendo
 tags:
   - php
+  - html
 ---
 ## A New Post
 
