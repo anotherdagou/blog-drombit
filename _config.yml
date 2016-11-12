@@ -25,7 +25,7 @@ prose:
         field:
           element: 'text'
           label: 'Titulo'
-          value: 'Titulo'
+          placeholder: 'Titulo'
       - name: 'description'
         field:
             element: 'textarea'
