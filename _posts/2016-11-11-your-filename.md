@@ -2,9 +2,10 @@
 layout: post
 author: Diego
 date: '2016-11-11 23:35 -0500'
-categories: diseno
+categories: desarrollo
 published: false
 title: 'El orden mundial '
+description: Este es el nuevo orden mundial
 ---
 ## A New Post
 
