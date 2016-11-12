@@ -10,3 +10,5 @@ description: Este es el buenas
 ## A New Post
 
 Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+
+por que no se ve publicado
