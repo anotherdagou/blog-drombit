@@ -3,7 +3,7 @@ layout: post
 author: Diego
 date: '2016-11-11 23:32 -0500'
 categories: diseno
-published: false
+published: true
 title: El nuevo mundo
 description: Este es el buenas
 ---
